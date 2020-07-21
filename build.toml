@@ -1,6 +1,6 @@
 [archive]
-build_output_dir = 'C:\Builds\Data Sharing Framework'
-archive_location = '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework'
+build_output_dir = 'Built'
+archive_location = '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
 
 [projects.windows]
 path = 'Core\Data Sharing Framework Core Build - Windows.lvproj'
@@ -32,9 +32,9 @@ project = '{linux_x64}'
 target = 'Linux RT x64'
 build_spec = 'Data Sharing Framework Core'
 
-[[package]]
+[package]
 type = 'nipkg'
-payload_dir = 'C:\Builds\Data Sharing Framework'
+payload_dir = 'Built'
 install_destination = 'ProgramFiles_32\National Instruments\RT Images'
 control_file = 'control_dsf_core_windows'
 package_output_dir = 'Source\Built'
