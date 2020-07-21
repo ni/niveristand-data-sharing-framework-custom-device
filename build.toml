@@ -53,7 +53,7 @@ build_spec = 'Engine Release'
 name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
 type = 'lvBuildSpec'
 project = '{CD_pharlap}'
-target = 'Pharlap x86'
+target = 'RT PXI Target'
 build_spec = 'Engine Release'
 
 [package]
