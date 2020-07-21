@@ -2,6 +2,10 @@
 build_output_dir = 'Built'
 archive_location = '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
 
+[dependencies.local]
+libraries = ['Builds\Data Sharing Framework\{target}\DSF Core.lvlibp']
+copy_location = 'VeriStand\Data Sharing Custom Device\Source'
+
 [projects.windows]
 path = 'Core\Data Sharing Framework Core Build - Windows.lvproj'
 
@@ -10,6 +14,15 @@ path = 'Core\Data Sharing Framework Core Build - PharLap x86.lvproj'
 
 [projects.linux_x64]
 path = 'Core\Data Sharing Framework Core Build - Linux RT x64.lvproj'
+
+[projects.CD_windows]
+path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device.lvproj'
+
+[projects.CD_pharlap]
+path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Pharlap.lvproj'
+
+[projects.CD_linuxRT]
+path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT.lvproj'
 
 [[build.steps]]
 name = 'Data Sharing Framework Core - Windows'
@@ -31,6 +44,34 @@ type = 'lvBuildSpec'
 project = '{linux_x64}'
 target = 'Linux RT x64'
 build_spec = 'Data Sharing Framework Core'
+
+[[build.steps]]
+name = 'Data Sharing Framework Custom Device - Windows - Configuration'
+type = 'lvBuildSpec'
+project = '{CD_windows}'
+target = 'My Computer'
+build_spec = 'Configuration Release'
+
+[[build.steps]]
+name = 'Data Sharing Framework Custom Device Engine - Windows'
+type = 'lvBuildSpec'
+project = '{CD_windows}'
+target = 'My Computer'
+build_spec = 'Engine Release'
+
+[[build.steps]]
+name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
+type = 'lvBuildSpec'
+project = '{CD_pharlap}'
+target = 'Pharlap x86'
+build_spec = 'Engine Release'
+
+[[build.steps]]
+name = 'Data Sharing Framework Custom Device Engine - Linux RT x64'
+type = 'lvBuildSpec'
+project = '{linux_x64}'
+target = 'Linux RT x64'
+build_spec = 'Engine Release'
 
 [package]
 type = 'nipkg'
