@@ -21,6 +21,9 @@ path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custo
 [projects.CD_pharlap]
 path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Pharlap.lvproj'
 
+[projects.CD_linuxRT]
+path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT.lvproj'
+
 [[build.steps]]
 name = 'Data Sharing Framework Core - Windows'
 type = 'lvBuildSpec'
@@ -33,6 +36,13 @@ name = 'Data Sharing Framework Core - Pharlap x86'
 type = 'lvBuildSpec'
 project = '{pharlap}'
 target = 'Pharlap x86'
+build_spec = 'Data Sharing Framework Core'
+
+[[build.steps]]
+name = 'Data Sharing Framework Core - Linux RT x64'
+type = 'lvBuildSpec'
+project = '{linux_x64}'
+target = 'Linux RT x64'
 build_spec = 'Data Sharing Framework Core'
 
 [[build.steps]]
@@ -54,6 +64,13 @@ name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
 type = 'lvBuildSpec'
 project = '{CD_pharlap}'
 target = 'RT PXI Target'
+build_spec = 'Engine Release'
+
+[[build.steps]]
+name = 'Data Sharing Framework Custom Device Engine - Linux RT x64'
+type = 'lvBuildSpec'
+project = '{linux_x64}'
+target = 'Linux RT x64'
 build_spec = 'Engine Release'
 
 [package]
