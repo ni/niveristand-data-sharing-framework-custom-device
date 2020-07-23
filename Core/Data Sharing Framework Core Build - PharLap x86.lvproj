@@ -134,7 +134,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Build/Pre-Build Action (Pharlap x86).vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{19113C8B-C1E1-4762-83FF-D3AEEA454CA5}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/C/Git/niveristand-data-sharing-framework-custom-device/Built/Core/pharlap/x86</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">/pharlap/x86</Property>
 				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
