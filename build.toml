@@ -51,7 +51,7 @@ type = 'lvBuildSpec'
 project = '{CD_windows}'
 target = 'My Computer'
 build_spec = 'Configuration Release'
-dependency_target = 'win\x86'
+dependency_target = 'win\\x86'
 
 [[build.steps]]
 name = 'Data Sharing Framework Custom Device Engine - Windows'
@@ -59,7 +59,7 @@ type = 'lvBuildSpec'
 project = '{CD_windows}'
 target = 'My Computer'
 build_spec = 'Engine Release'
-dependency_target = 'win\x86'
+dependency_target = 'win\\x86'
 
 [[build.steps]]
 name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
@@ -67,7 +67,7 @@ type = 'lvBuildSpec'
 project = '{CD_pharlap}'
 target = 'RT PXI Target'
 build_spec = 'Engine Release'
-dependency_target = 'pharlap\x86'
+dependency_target = 'pharlap\\x86'
 
 #[[build.steps]]
 #name = 'Data Sharing Framework Custom Device Engine - Linux RT x64'
