@@ -129,20 +129,20 @@
 			<Item Name="Data Sharing Framework Core" Type="Packed Library">
 				<Property Name="Bld_buildCacheID" Type="Str">{1B4D8E5C-AA8F-402F-AE2B-46ECAECF87ED}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Data Sharing Framework Core</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Builds/Data Sharing Framework/Linux</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Build/Pre-Build Action (Linux RT x64).vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{559B0C74-4592-419C-B7EF-D9723B7D9E8B}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">/x64/Core</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">../Built/Core/linux/x64</Property>
 				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">DSF Core.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/x64/Core/DSF Core.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Core/linux/x64/DSF Core.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/x64/Core</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Core/linux/x64/Support</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].itemID" Type="Str">{08B83328-06DE-4457-81F4-88D9856D5029}</Property>
