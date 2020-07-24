@@ -22,7 +22,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Utility" Type="Folder">
-			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
+			<Item Name="Copy Built Directory Up Two Levels.vi" Type="VI" URL="../Utility/Copy Built Directory Up Two Levels.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -411,7 +411,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy Built Directory Up Two Levels.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4E90626A-6DF7-4621-A062-A4F452B6E581}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/pharlap/x86/DSF Engine Pharlap.llb</Property>
 				<Property Name="Bld_version.build" Type="Int">32</Property>
