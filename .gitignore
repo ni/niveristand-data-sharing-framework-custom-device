@@ -11,3 +11,6 @@
 # Metadata
 *.aliases
 *.lvlps
+VeriStand/Data Sharing Custom Device/Built/Custom Device/pharlap/x86/DSF Engine Pharlap.llb
+VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp
+Built/Custom Device/pharlap/x86/DSF Engine Pharlap.llb
