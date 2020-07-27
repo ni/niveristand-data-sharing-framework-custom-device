@@ -406,7 +406,6 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{27D4C697-BDC3-4E46-94C1-28409742B35A}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Release</Property>
-				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built</Property>
@@ -421,10 +420,11 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/pharlap/x86/Support</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/pharlap/x86</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{58B319E4-D3D7-4897-9A31-8A368407D396}</Property>
+				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{93F06B9C-09DC-488C-A7CE-964F98AA1316}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/DSF Engine.lvlib/RT Driver VI.vi</Property>

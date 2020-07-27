@@ -78,14 +78,7 @@ dependency_target = 'pharlap\\x86'
 
 [package]
 type = 'nipkg'
-payload_dir = 'Built\Core'
-install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Data Sharing Framework'
-control_file = 'control_dsf_core_windows'
-package_output_dir = 'Built'
-
-[package]
-type = 'nipkg'
 payload_dir = 'Built\Custom Device'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Data Sharing Framework'
-control_file = 'control_dsf_cd_windows'
+control_file = 'control_dsf_cd'
 package_output_dir = 'Built'
