@@ -38,12 +38,12 @@ project = '{pharlap}'
 target = 'Pharlap x86'
 build_spec = 'Data Sharing Framework Core'
 
-#[[build.steps]]
-#name = 'Data Sharing Framework Core - Linux RT x64'
-#type = 'lvBuildSpec'
-#project = '{linux_x64}'
-#target = 'Linux RT x64'
-#build_spec = 'Data Sharing Framework Core'
+[[build.steps]]
+name = 'Data Sharing Framework Core - Linux RT x64'
+type = 'lvBuildSpec'
+project = '{linux_x64}'
+target = 'Linux RT x64'
+build_spec = 'Data Sharing Framework Core'
 
 [[build.steps]]
 name = 'Data Sharing Framework Custom Device Configuration - Windows'
