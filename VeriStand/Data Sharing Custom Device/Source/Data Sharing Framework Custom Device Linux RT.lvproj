@@ -22,7 +22,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Utility" Type="Folder">
-			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
+			<Item Name="Post-Build Action.vi" Type="VI" URL="../Utility/Post-Build Action.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -114,11 +114,6 @@
 							<Item Name="Status Pointer.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Status/Status Pointer.lvclass"/>
 							<Item Name="Timing Status Pointer.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Timing Status/Timing Status Pointer.lvclass"/>
 						</Item>
-						<Item Name="Pool" Type="Folder">
-							<Item Name="ID Pool.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Pool/ID/ID Pool.lvclass"/>
-							<Item Name="Plugin Interface Pool.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Pool/Plugin Interface/Plugin Interface Pool.lvclass"/>
-							<Item Name="Pool.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Pool/Pool.lvclass"/>
-						</Item>
 						<Item Name="State" Type="Folder">
 							<Item Name="State.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/State/State.lvclass"/>
 						</Item>
@@ -128,7 +123,6 @@
 							<Item Name="Logging Thread.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread/Logging/Logging Thread.lvclass"/>
 							<Item Name="Thread Manager.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread Manager/Thread Manager.lvclass"/>
 						</Item>
-						<Item Name="Component Loader.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component Loader/Component Loader.lvclass"/>
 						<Item Name="Plugin.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Plugin/Plugin.lvclass"/>
 						<Item Name="Timing.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Timing/Timing.lvclass"/>
 					</Item>
@@ -141,14 +135,6 @@
 								<Item Name="Read Buffer.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Buffer Reader/Read Buffer.vi"/>
 							</Item>
 							<Item Name="Item Tree" Type="Folder">
-								<Item Name="ID to Tree Items" Type="Folder">
-									<Item Name="Channel ID to Tree Items.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Channel ID to Tree Items.vi"/>
-									<Item Name="Group ID to Tree Items.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Group ID to Tree Items.vi"/>
-									<Item Name="Plugin ID to Tree Items.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Plugin ID to Tree Items.vi"/>
-									<Item Name="Transfer ID to Tree Items.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Transfer ID to Tree Items.vi"/>
-									<Item Name="Tree Item Type.ctl" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Tree Item Type.ctl"/>
-								</Item>
-								<Item Name="Add Buffer Channels.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Buffer Channels.vi"/>
 								<Item Name="Add Buffer Data to Variant.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Buffer Data to Variant.vi"/>
 								<Item Name="Add Item to Tree.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Item to Tree.vi"/>
 								<Item Name="Add Item with Setting.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Item with Setting.vi"/>
@@ -166,10 +152,10 @@
 								<Item Name="Get Buffer Data from Variant.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Get Buffer Data from Variant.vi"/>
 								<Item Name="Get Item Display Name.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Get Item Display Name.vi"/>
 								<Item Name="Get Item Type.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Get Item Type.vi"/>
-								<Item Name="Is Item Preloaded" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Is Item Preloaded"/>
+								<Item Name="Is Item Preloaded.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Is Item Preloaded.vi"/>
 								<Item Name="Load All Subitems.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Load All Subitems.vi"/>
-								<Item Name="Load Subitems.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Load Subitems.vi"/>
 								<Item Name="Select First Item.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Select First Item.vi"/>
+								<Item Name="Tree Item Type.ctl" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Tree Item Type.ctl"/>
 								<Item Name="Tree Item.ctl" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Tree Item.ctl"/>
 							</Item>
 							<Item Name="Main VI" Type="Folder">
@@ -200,23 +186,83 @@
 							</Item>
 						</Item>
 						<Item Name="Base 10 Digit Count.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Base 10 Digit Count.vi"/>
+						<Item Name="DSF Version.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/DSF Version.vi"/>
+						<Item Name="Find Component Configuration.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Find Component Configuration.vi"/>
+						<Item Name="Internal Components.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Internal Components.vi"/>
+						<Item Name="Verison Cluster to String.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Verison Cluster to String.vi"/>
 						<Item Name="VI Name.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/VI Name.vi"/>
 					</Item>
 				</Item>
 				<Item Name="Public" Type="Folder">
 					<Item Name="Classes" Type="Folder">
-						<Item Name="Components" Type="Folder">
-							<Item Name="Buffer Converter.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Buffer Converter/Buffer Converter.lvclass"/>
-							<Item Name="Transceiver.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Transceiver/Transceiver.lvclass"/>
+						<Item Name="Component" Type="Folder">
+							<Item Name="Core" Type="Folder">
+								<Item Name="Core Component Configurations.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component Configuration/Core/Core Component Configurations.lvclass"/>
+								<Item Name="Core Component User Interfaces.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component User Interface/Core/Core Component User Interfaces.lvclass"/>
+								<Item Name="Core Component.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component/Core/Core Component.lvclass"/>
+							</Item>
+							<Item Name="Default Buffer Converter" Type="Folder">
+								<Item Name="Default Buffer Converter Component.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component/Default Buffer Converter/Default Buffer Converter Component.lvclass"/>
+								<Item Name="Default Buffer Converter Configurations.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/Configurations/Default Buffer Converter Configurations.lvclass"/>
+								<Item Name="Default Buffer Converter User Interfaces.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/User Interfaces/Default Buffer Converter User Interfaces.lvclass"/>
+							</Item>
+							<Item Name="Component Configurations.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component Configuration/Component Configurations.lvclass"/>
+							<Item Name="Component User Interfaces.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component User Interface/Component User Interfaces.lvclass"/>
+							<Item Name="Component.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component/Component.lvclass"/>
+						</Item>
+						<Item Name="Configuration" Type="Folder">
+							<Item Name="Core" Type="Folder">
+								<Item Name="Types" Type="Folder">
+									<Item Name="Channel Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Channel/Channel Configuration.lvclass"/>
+									<Item Name="Framework Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Framework/Framework Configuration.lvclass"/>
+									<Item Name="Group Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Group/Group Configuration.lvclass"/>
+									<Item Name="Plugin Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Plugin Configuration.lvclass"/>
+									<Item Name="Thread Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Thread/Thread Configuration.lvclass"/>
+									<Item Name="Transfer Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Transfer/Transfer Configuration.lvclass"/>
+								</Item>
+								<Item Name="Core Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Core Configuration.lvclass"/>
+							</Item>
+							<Item Name="Default Buffer Converter" Type="Folder">
+								<Item Name="Default Buffer Converter Transfer Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/Configurations/Default Buffer Converter Transfer Configuration.lvclass"/>
+							</Item>
+							<Item Name="Configuration.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Configuration.lvclass"/>
 						</Item>
 						<Item Name="Thread" Type="Folder">
-							<Item Name="Plugin Thread.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread/Plugin/Plugin Thread.lvclass"/>
+							<Item Name="Plugin" Type="Folder">
+								<Item Name="Transceiver" Type="Folder">
+									<Item Name="Default Buffer Converter" Type="Folder">
+										<Item Name="Default Buffer Converter.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/Default Buffer Converter.lvclass"/>
+									</Item>
+									<Item Name="Buffer Converter.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Buffer Converter/Buffer Converter.lvclass"/>
+									<Item Name="Transceiver Thread.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread/Plugin/Transceiver/Transceiver Thread.lvclass"/>
+									<Item Name="Transceiver.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Transceiver/Transceiver.lvclass"/>
+								</Item>
+								<Item Name="Plugin Thread.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread/Plugin/Plugin Thread.lvclass"/>
+							</Item>
 							<Item Name="Thread.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread/Thread.lvclass"/>
-							<Item Name="Transceiver Thread.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Thread/Plugin/Transceiver/Transceiver Thread.lvclass"/>
+						</Item>
+						<Item Name="User Interface" Type="Folder">
+							<Item Name="Core" Type="Folder">
+								<Item Name="Core Channel User Interface.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/Core/Channel/Core Channel User Interface.lvclass"/>
+								<Item Name="Core Group User Interface.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/Core/Group/Core Group User Interface.lvclass"/>
+								<Item Name="Core Plugin User Interface.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/Core/Plugin/Core Plugin User Interface.lvclass"/>
+								<Item Name="Core Thread User Interface.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/Core/Thread/Core Thread User Interface.lvclass"/>
+								<Item Name="Core Transfer User Interface.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/Core/Transfer/Core Transfer User Interface.lvclass"/>
+							</Item>
+							<Item Name="Default Buffer Converter" Type="Folder">
+								<Item Name="Default Buffer Converter Transfers UI.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/User Interfaces/Transfer/Default Buffer Converter Transfers UI.lvclass"/>
+							</Item>
+							<Item Name="Editors" Type="Folder">
+								<Item Name="Component Settings Editor.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/Editors/Component/Component Settings Editor.lvclass"/>
+							</Item>
+							<Item Name="User Interface Events.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface Events/User Interface Events.lvclass"/>
+							<Item Name="User Interface Handler.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface Handler/User Interface Handler.lvclass"/>
+							<Item Name="User Interface.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/User Interface/User Interface.lvclass"/>
 						</Item>
 						<Item Name="Buffer.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Buffer/Buffer.lvclass"/>
 						<Item Name="Buffers.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Buffers/Buffers.lvclass"/>
-						<Item Name="Configuration Session.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration/Configuration Session.lvclass"/>
+						<Item Name="Component Loader.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Component Loader/Component Loader.lvclass"/>
+						<Item Name="Configuration Session.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Configuration Session/Configuration Session.lvclass"/>
 						<Item Name="Framework Status.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Framework Status/Framework Status.lvclass"/>
 						<Item Name="Framework.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Framework/Framework.lvclass"/>
 						<Item Name="Performance.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/Classes/Performance/Performance.lvclass"/>
@@ -237,7 +283,9 @@
 						<Item Name="DSF Byte Order.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Byte Order.ctl"/>
 						<Item Name="DSF Channel Buffer Descriptor.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Channel Buffer Descriptor.ctl"/>
 						<Item Name="DSF Channel Info.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Channel Info.ctl"/>
+						<Item Name="DSF Component Configuration.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Component Configuration.ctl"/>
 						<Item Name="DSF Configuration Errors.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Configuration Errors.ctl"/>
+						<Item Name="DSF Configuration ID.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Configuration ID.ctl"/>
 						<Item Name="DSF Data Type.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Data Type.ctl"/>
 						<Item Name="DSF Direction.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Direction.ctl"/>
 						<Item Name="DSF Group Info.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Group Info.ctl"/>
@@ -251,44 +299,300 @@
 						<Item Name="DSF Version Info.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Version Info.ctl"/>
 					</Item>
 					<Item Name="VIs" Type="Folder">
+						<Item Name="Components" Type="Folder">
+							<Item Name="Add Component Configuration.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Add Component Configuration.vi"/>
+							<Item Name="Add Component Default Settings.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Add Component Default Settings.vi"/>
+						</Item>
 						<Item Name="Utilities" Type="Folder">
 							<Item Name="Async" Type="Folder">
 								<Item Name="Launch Data Viewer.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Launch Data Viewer.vi"/>
 							</Item>
 							<Item Name="Data Viewer.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Data Viewer.vi"/>
-							<Item Name="Edit Configuration File.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Edit Configuration File.vi"/>
+							<Item Name="Edit Configuration File.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration Session/Edit Configuration File.vi"/>
 						</Item>
 						<Item Name="Viewer API" Type="Folder">
 							<Item Name="Connect to Data Server.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Connect to Data Server.vi"/>
 							<Item Name="Read Buffer Data from Server.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Read Buffer Data from Server.vi"/>
 							<Item Name="Request Buffer from Server.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Request Buffer from Server.vi"/>
 						</Item>
-						<Item Name="DSF Version.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/DSF Version.vi"/>
 					</Item>
 				</Item>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Path.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/jpeg.llb/Check Path.vi"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/picture.llb/Create Mask By Alpha.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/jpeg.llb/Directory of Top Level VI.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Get LV Class Default Value.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/List Directory and LLBs.vi"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVFontTypeDef.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVFontTypeDef.ctl"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVSelectionTypeDef.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVSelectionTypeDef.ctl"/>
 				<Item Name="Memory Manager.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Memory Manager.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="nirviCommon.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/express/rvi/timingcommon/nirviCommon.vi"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Read PNG File.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/picture/png.llb/Read PNG File.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Recursive File List.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Set Busy.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/cursorutil.llb/Set Busy.vi"/>
+				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
+				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
+				<Item Name="Set Cursor.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/cursorutil.llb/Set Cursor.vi"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Static Errors.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Static Errors.lvlib"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Unset Busy.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/cursorutil.llb/Unset Busy.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 			</Item>
+			<Item Name="DSF FIFO Options.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF FIFO Options.ctl"/>
+			<Item Name="DSF Plugin Options.ctl" Type="VI" URL="../DSF Core.lvlibp/Typedefs/DSF Plugin Options.ctl"/>
+			<Item Name="Encapsulate Buffer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Buffer/Encapsulate Buffer.vi"/>
+			<Item Name="Encapsulate.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Encapsulate.vi"/>
+			<Item Name="Engine Library Name.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Constants/Engine Library Name.vi"/>
+			<Item Name="Error Offset (Configuration).vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Constants/Error Offset (Configuration).vi"/>
+			<Item Name="Error Pointer.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Pointers/Error/Error Pointer.lvclass/Error Pointer.ctl"/>
+			<Item Name="Error Size.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Pointers/Error/Error Size.vi"/>
+			<Item Name="Errors.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Errors.vi"/>
+			<Item Name="Errors.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Errors.vi"/>
+			<Item Name="Errors.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Errors.vi"/>
+			<Item Name="Find.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Plugin/Find.vi"/>
+			<Item Name="Framework Options.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Framework Options.ctl"/>
+			<Item Name="Framework State Parameters.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Framework State Parameters.ctl"/>
+			<Item Name="Framework States.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Framework States.ctl"/>
+			<Item Name="Framework.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Framework.ctl"/>
+			<Item Name="FT_FileTypes.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/FT_FileTypes.ctl"/>
+			<Item Name="Get Active.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Active.vi"/>
+			<Item Name="Get Address.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Get Address.vi"/>
+			<Item Name="Get Async Rx Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Async Rx Transfer Groups.vi"/>
+			<Item Name="Get Async Tx Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Async Tx Transfer Groups.vi"/>
+			<Item Name="Get Buffer Size.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Buffer/Get Buffer Size.vi"/>
+			<Item Name="Get Buffers.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Buffers.vi"/>
+			<Item Name="Get Channels.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Transfer/Get Channels.vi"/>
+			<Item Name="Get Components.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Get Components.vi"/>
+			<Item Name="Get Configuration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Get Configuration.vi"/>
+			<Item Name="Get Configurations.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Component/Get Configurations.vi"/>
+			<Item Name="Get Core.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Group/Get Core.vi"/>
+			<Item Name="Get Core.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Get Core.vi"/>
+			<Item Name="Get Core.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Transfer/Get Core.vi"/>
+			<Item Name="Get Cycle Timing.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Get Cycle Timing.vi"/>
+			<Item Name="Get Decimation.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Get Decimation.vi"/>
+			<Item Name="Get Exported File List.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/Get Exported File List.vi"/>
+			<Item Name="Get File Type.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/Get File Type.vi"/>
+			<Item Name="Get Framework Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework Status/Get Framework Pointer.vi"/>
+			<Item Name="Get Group Configurations.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Thread/Get Group Configurations.vi"/>
+			<Item Name="Get ID.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get ID.vi"/>
+			<Item Name="Get ID.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get ID.vi"/>
+			<Item Name="Get Inline Rx Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Inline Rx Transfer Groups.vi"/>
+			<Item Name="Get Inline Tx Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Inline Tx Transfer Groups.vi"/>
+			<Item Name="Get Inline.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Inline.vi"/>
+			<Item Name="Get Iteration and Late Count.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Iteration and Late Count.vi"/>
+			<Item Name="Get Iteration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Get Iteration.vi"/>
+			<Item Name="Get Name.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Component/Get Name.vi"/>
+			<Item Name="Get Name.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Name.vi"/>
+			<Item Name="Get Name.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Name.vi"/>
+			<Item Name="Get Offset.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Get Offset.vi"/>
+			<Item Name="Get Plugin Configurations.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Framework/Get Plugin Configurations.vi"/>
+			<Item Name="Get Plugin Pointers.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework Status/Get Plugin Pointers.vi"/>
+			<Item Name="Get Power Of 2.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Pointers/Error/Get Power Of 2.vi"/>
+			<Item Name="Get Size.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Get Size.vi"/>
+			<Item Name="Get Status Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework Status/Get Status Pointer.vi"/>
+			<Item Name="Get Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Status.vi"/>
+			<Item Name="Get Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Status.vi"/>
+			<Item Name="Get Thread Configurations.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Get Thread Configurations.vi"/>
+			<Item Name="Get Thread Interfaces.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Thread Interfaces.vi"/>
+			<Item Name="Get Thread.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Thread.vi"/>
+			<Item Name="Get Timing Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Performance/Get Timing Status.vi"/>
+			<Item Name="Get Timing.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Get Timing.vi"/>
+			<Item Name="Get Transfer Configurations.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration/Core/Group/Get Transfer Configurations.vi"/>
+			<Item Name="Get Transfers.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Get Transfers.vi"/>
+			<Item Name="Group.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Group.ctl"/>
+			<Item Name="Increment Iteration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Increment Iteration.vi"/>
+			<Item Name="Increment Iteration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Increment Iteration.vi"/>
+			<Item Name="Increment Iteration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Increment Iteration.vi"/>
+			<Item Name="Increment Plugins.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Increment Plugins.vi"/>
+			<Item Name="Initialize Plugin Settings.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Dispatcher/Initialize Plugin Settings.vi"/>
+			<Item Name="Initialize Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Initialize Status.vi"/>
+			<Item Name="Initialize Threads.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Initialize Threads.vi"/>
+			<Item Name="Initialize Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Initialize Transfer Groups.vi"/>
+			<Item Name="Initialize Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Plugin/Initialize Transfer Groups.vi"/>
+			<Item Name="Initialize.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Initialize.vi"/>
+			<Item Name="Inline Buffer Parameters.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Inline Buffer Parameters.ctl"/>
+			<Item Name="Interface Error Info.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Interface Error Info.vi"/>
+			<Item Name="Interface Error Offset.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Interface Error Offset.vi"/>
+			<Item Name="Interface.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Interface.lvclass/Interface.ctl"/>
+			<Item Name="Invalid Offset.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Invalid Offset.vi"/>
+			<Item Name="Invalid Priority.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Invalid Priority.vi"/>
+			<Item Name="Invalid Response.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Invalid Response.vi"/>
+			<Item Name="Is Active Cycle.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Is Active Cycle.vi"/>
+			<Item Name="Is Active.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Is Active.vi"/>
+			<Item Name="Is Active.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Is Active.vi"/>
+			<Item Name="Is Inline.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Is Inline.vi"/>
+			<Item Name="Is Null.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Is Null.vi"/>
+			<Item Name="Iteration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Iteration.vi"/>
+			<Item Name="Launch All.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread Manager/Launch All.vi"/>
+			<Item Name="Library Name.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Constants/Library Name.vi"/>
+			<Item Name="Load Components.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Component Loader/Load Components.vi"/>
+			<Item Name="Load Configuration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration Session/Load Configuration.vi"/>
+			<Item Name="Logging Thread.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Logging/Logging Thread.lvclass/Logging Thread.ctl"/>
+			<Item Name="Metrics.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Metrics.ctl"/>
+			<Item Name="New Buffer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Buffer/New Buffer.vi"/>
+			<Item Name="New Error Cluster (512B).vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/New Error Cluster (512B).vi"/>
+			<Item Name="New Error Cluster.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/New Error Cluster.vi"/>
+			<Item Name="New Error Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Pointers/Error/New Error Pointer.vi"/>
+			<Item Name="New Interface Error.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/New Interface Error.vi"/>
+			<Item Name="New Interface.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/New Interface.vi"/>
+			<Item Name="New Logging Thread.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Logging/New Logging Thread.vi"/>
+			<Item Name="New Timing Error.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/New Timing Error.vi"/>
+			<Item Name="New.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/New.vi"/>
+			<Item Name="New.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Dispatcher/New.vi"/>
+			<Item Name="New.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transceiver/New.vi"/>
+			<Item Name="Null Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Null Pointer.vi"/>
+			<Item Name="Offset Inline Buffers.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Offset Inline Buffers.vi"/>
+			<Item Name="Out of Bounds.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Out of Bounds.vi"/>
+			<Item Name="Override Error Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Override Error Pointer.vi"/>
+			<Item Name="Override State Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Override State Pointer.vi"/>
+			<Item Name="Parameters.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Parameters.ctl"/>
+			<Item Name="Plugin.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Plugin.lvclass/Plugin.ctl"/>
+			<Item Name="Plugin.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Data Server/Plugin.ctl"/>
+			<Item Name="Pointer Class Name.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Constants/Pointer Class Name.vi"/>
+			<Item Name="Pointer Error Info.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Pointer Error Info.vi"/>
+			<Item Name="Pointer.ctl" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Pointer.lvclass/Pointer.ctl"/>
+			<Item Name="Pointer.lvclass" Type="LVClass" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Pointer.lvclass"/>
+			<Item Name="Read (No Check) 1D U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read (No Check) 1D U8.vi"/>
+			<Item Name="Read (No Check) Bool.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read (No Check) Bool.vi"/>
+			<Item Name="Read (No Check) U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read (No Check) U8.vi"/>
+			<Item Name="Read (No Check).vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read (No Check).vi"/>
+			<Item Name="Read 1D U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read 1D U8.vi"/>
+			<Item Name="Read All State Data.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework Status/Read All State Data.vi"/>
+			<Item Name="Read Bool.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read Bool.vi"/>
+			<Item Name="Read Dispatcher Response.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Read Dispatcher Response.vi"/>
+			<Item Name="Read RT FIFO.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Read RT FIFO.vi"/>
+			<Item Name="Read State.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Read State.vi"/>
+			<Item Name="Read Thread States.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Read Thread States.vi"/>
+			<Item Name="Read Thread States.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread Manager/Read Thread States.vi"/>
+			<Item Name="Read U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read U8.vi"/>
+			<Item Name="Read.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Read.vi"/>
+			<Item Name="Read.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Read.vi"/>
+			<Item Name="Response Timeout.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Response Timeout.vi"/>
+			<Item Name="Run All.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread Manager/Run All.vi"/>
+			<Item Name="Run Thread.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Run Thread.vi"/>
+			<Item Name="Rx Async.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Rx Async.vi"/>
+			<Item Name="Rx Begin.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Performance/Rx Begin.vi"/>
+			<Item Name="Rx End.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Performance/Rx End.vi"/>
+			<Item Name="Rx Inline Start.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Rx Inline Start.vi"/>
+			<Item Name="Rx Inline Wait.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Rx Inline Wait.vi"/>
+			<Item Name="Save Configuration.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration Session/Save Configuration.vi"/>
+			<Item Name="Send Command.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Send Command.vi"/>
+			<Item Name="Send Dispatcher Command.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Send Dispatcher Command.vi"/>
+			<Item Name="Send Inline Buffer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Send Inline Buffer.vi"/>
+			<Item Name="Send Logging Command.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Send Logging Command.vi"/>
+			<Item Name="Send Plugin Command.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Plugin/Send Plugin Command.vi"/>
+			<Item Name="Send Shutdown.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Send Shutdown.vi"/>
+			<Item Name="Send Shutdown.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Send Shutdown.vi"/>
+			<Item Name="Send Start.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Send Start.vi"/>
+			<Item Name="Send Start.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Send Start.vi"/>
+			<Item Name="Send.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Send.vi"/>
+			<Item Name="Send.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Plugin/Send.vi"/>
+			<Item Name="Separate Inline and Async Plugins.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Separate Inline and Async Plugins.vi"/>
+			<Item Name="Separate Inline and Async.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Separate Inline and Async.vi"/>
+			<Item Name="Separate Rx and Tx.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Separate Rx and Tx.vi"/>
+			<Item Name="Set Active.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Set Active.vi"/>
+			<Item Name="Set Active.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Set Active.vi"/>
+			<Item Name="Set Address.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Set Address.vi"/>
+			<Item Name="Set Buffer Offset.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Buffer/Set Buffer Offset.vi"/>
+			<Item Name="Set Decimation.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Set Decimation.vi"/>
+			<Item Name="Set Error Code.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/Set Error Code.vi"/>
+			<Item Name="Set Error Source.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/Set Error Source.vi"/>
+			<Item Name="Set Error Status.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/Set Error Status.vi"/>
+			<Item Name="Set ID.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Set ID.vi"/>
+			<Item Name="Set Inline.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Set Inline.vi"/>
+			<Item Name="Set Internal.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Set Internal.vi"/>
+			<Item Name="Set Name.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Set Name.vi"/>
+			<Item Name="Set Offset.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Set Offset.vi"/>
+			<Item Name="Set Priority.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Set Priority.vi"/>
+			<Item Name="Set Size.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Set Size.vi"/>
+			<Item Name="Set Thread Parameters.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Set Thread Parameters.vi"/>
+			<Item Name="Shutdown All.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread Manager/Shutdown All.vi"/>
+			<Item Name="Shutdown Thread.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Shutdown Thread.vi"/>
+			<Item Name="Sizeof.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Sizeof.vi"/>
+			<Item Name="Sort by Priority.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Sort by Priority.vi"/>
+			<Item Name="Sort by Priority.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Sort by Priority.vi"/>
+			<Item Name="Sort Groups by ID.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Sort Groups by ID.vi"/>
+			<Item Name="Status Data.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Status/Status Data.ctl"/>
+			<Item Name="Status Size.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Status/Status Size.vi"/>
+			<Item Name="Subset Plugin State Data.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework Status/Subset Plugin State Data.vi"/>
+			<Item Name="Subset Transfer Groups.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Subset Transfer Groups.vi"/>
+			<Item Name="Subset.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Subset.vi"/>
+			<Item Name="Thread Manager.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread Manager/Thread Manager.lvclass/Thread Manager.ctl"/>
+			<Item Name="Thread Options.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Thread Options.ctl"/>
+			<Item Name="Thread Settings.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Thread Settings.ctl"/>
+			<Item Name="Thread State.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Thread State.ctl"/>
+			<Item Name="Timing Error Info.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Timing Error Info.vi"/>
+			<Item Name="Timing.ctl" Type="VI" URL="../DSF Core.lvlibp/Classes/Timing/Timing.lvclass/Timing.ctl"/>
+			<Item Name="Tx Async.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Tx Async.vi"/>
+			<Item Name="Tx Begin.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Performance/Tx Begin.vi"/>
+			<Item Name="Tx End.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Performance/Tx End.vi"/>
+			<Item Name="Tx Inline Start.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Tx Inline Start.vi"/>
+			<Item Name="Tx Inline Wait.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Tx Inline Wait.vi"/>
+			<Item Name="Update Performance.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Update Performance.vi"/>
+			<Item Name="Update Plugins Data.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Thread/Logging/Update Plugins Data.vi"/>
+			<Item Name="Update Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Framework/Update Status.vi"/>
+			<Item Name="Update Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Plugin/Update Status.vi"/>
+			<Item Name="Update Timing.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Performance/Update Timing.vi"/>
+			<Item Name="Wait For Logging Response.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Wait For Logging Response.vi"/>
+			<Item Name="Wait For Previous.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Transfer Group/Wait For Previous.vi"/>
+			<Item Name="Wait For Response.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Wait For Response.vi"/>
+			<Item Name="Wait For.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Logging/Wait For.vi"/>
+			<Item Name="Write (No Check) 1D U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write (No Check) 1D U8.vi"/>
+			<Item Name="Write (No Check) Bool.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write (No Check) Bool.vi"/>
+			<Item Name="Write (No Check) U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write (No Check) U8.vi"/>
+			<Item Name="Write (No Check).vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write (No Check).vi"/>
+			<Item Name="Write 1D U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write 1D U8.vi"/>
+			<Item Name="Write Bool.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write Bool.vi"/>
+			<Item Name="Write Buffer 1D DBL.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Buffer/Write Buffer 1D DBL.vi"/>
+			<Item Name="Write Buffer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Buffer/Write Buffer.vi"/>
+			<Item Name="Write Dispatcher Command.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Write Dispatcher Command.vi"/>
+			<Item Name="Write Error Pointer.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Pointers/Error/Write Error Pointer.vi"/>
+			<Item Name="Write Numeric Scalar to Source (Base10 U64).vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/Write Numeric Scalar to Source (Base10 U64).vi"/>
+			<Item Name="Write Numeric to Source.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/Write Numeric to Source.vi"/>
+			<Item Name="Write Pointer Size to Error.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write Pointer Size to Error.vi"/>
+			<Item Name="Write RT FIFO.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Write RT FIFO.vi"/>
+			<Item Name="Write Status.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Status/Write Status.vi"/>
+			<Item Name="Write String to Source.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/VIs/Write String to Source.vi"/>
+			<Item Name="Write U8.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write U8.vi"/>
+			<Item Name="Write.vi" Type="VI" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/NI/Memory Manager/Classes/Pointer/Write.vi"/>
+			<Item Name="Write.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Interface/Dispatcher/Write.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Release" Type="Source Distribution">
@@ -299,7 +603,7 @@
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1F2CCA65-B437-4653-842F-BA96CE93D0AF}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Data Sharing Framework/Linux_x64/DSF Engine Linux64.llb</Property>
 				<Property Name="Bld_version.build" Type="Int">4</Property>
@@ -312,7 +616,7 @@
 				<Property Name="Destination[1].path" Type="Path">/Data Sharing Framework/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2CE335D0-63D2-4343-9BBD-37B9BB7B24F6}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{49ABF491-87AE-4476-99BF-04656D0CC4C4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux RT PXI/DSF Engine.lvlib/RT Driver VI.vi</Property>
