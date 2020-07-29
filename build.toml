@@ -86,7 +86,7 @@ dependency_target = 'pharlap\\x86'
 name = 'Data Sharing Framework Custom Device Engine - Linux RT arm'
 type = 'lvBuildSpec'
 project = '{CD_linuxRT_arm}'
-target = 'Linux RT arm'
+target = 'Linux RT ARM'
 build_spec = 'Engine Release'
 dependency_target = 'linux\\arm'
 
