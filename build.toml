@@ -12,7 +12,10 @@ path = 'Core\Data Sharing Framework Core Build - Windows.lvproj'
 [projects.Core_pharlap]
 path = 'Core\Data Sharing Framework Core Build - PharLap x86.lvproj'
 
-[projects.Core_linux]
+[projects.Core_linux_arm]
+path = 'Core\Data Sharing Framework Core Build - Linux RT ARM.lvproj'
+
+[projects.Core_linux_x64]
 path = 'Core\Data Sharing Framework Core Build - Linux RT.lvproj'
 
 [projects.CD_windows]
@@ -21,8 +24,11 @@ path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custo
 [projects.CD_pharlap]
 path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Pharlap.lvproj'
 
-[projects.CD_linuxRT]
-path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT cRIO.lvproj'
+[projects.CD_linuxRT_arm]
+path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT ARM.lvproj'
+
+[projects.CD_linuxRT_x64]
+path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT x64.lvproj'
 
 [[build.steps]]
 name = 'Data Sharing Framework Core - Windows'
@@ -41,14 +47,14 @@ build_spec = 'Data Sharing Framework Core'
 [[build.steps]]
 name = 'Data Sharing Framework Core - Linux RT ARM'
 type = 'lvBuildSpec'
-project = '{Core_linux}'
+project = '{Core_linux_arm}'
 target = 'Linux RT ARM'
 build_spec = 'Data Sharing Framework Core'
 
 [[build.steps]]
 name = 'Data Sharing Framework Core - Linux RT x64'
 type = 'lvBuildSpec'
-project = '{Core_linux}'
+project = '{Core_linux_x64}'
 target = 'Linux RT x64'
 build_spec = 'Data Sharing Framework Core'
 
@@ -79,7 +85,7 @@ dependency_target = 'pharlap\\x86'
 [[build.steps]]
 name = 'Data Sharing Framework Custom Device Engine - Linux RT arm'
 type = 'lvBuildSpec'
-project = '{CD_linuxRT}'
+project = '{CD_linuxRT_arm}'
 target = 'Linux RT arm'
 build_spec = 'Engine Release'
 dependency_target = 'linux\\arm'
@@ -87,7 +93,7 @@ dependency_target = 'linux\\arm'
 [[build.steps]]
 name = 'Data Sharing Framework Custom Device Engine - Linux RT x64'
 type = 'lvBuildSpec'
-project = '{CD_linuxRT}'
+project = '{CD_linuxRT_x64}'
 target = 'Linux RT x64'
 build_spec = 'Engine Release'
 dependency_target = 'linux\\x64'
