@@ -30,19 +30,19 @@ path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custo
 [projects.CD_linuxRT_x64]
 path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT x64.lvproj'
 
-[[build.steps]]
-name = 'Data Sharing Framework Core - Windows'
-type = 'lvBuildSpec'
-project = '{Core_windows}'
-target = 'My Computer'
-build_spec = 'Data Sharing Framework Core'
-
 #[[build.steps]]
-#name = 'Data Sharing Framework Core - Pharlap x86'
+#name = 'Data Sharing Framework Core - Windows'
 #type = 'lvBuildSpec'
-#project = '{Core_pharlap}'
-#target = 'Pharlap x86'
+#project = '{Core_windows}'
+#target = 'My Computer'
 #build_spec = 'Data Sharing Framework Core'
+
+[[build.steps]]
+name = 'Data Sharing Framework Core - Pharlap x86'
+type = 'lvBuildSpec'
+project = '{Core_pharlap}'
+target = 'Pharlap x86'
+build_spec = 'Data Sharing Framework Core'
 
 #[[build.steps]]
 #name = 'Data Sharing Framework Core - Linux RT ARM'
@@ -58,29 +58,29 @@ build_spec = 'Data Sharing Framework Core'
 #target = 'Linux RT x64'
 #build_spec = 'Data Sharing Framework Core'
 
-[[build.steps]]
-name = 'Data Sharing Framework Custom Device Configuration - Windows'
-type = 'lvBuildSpec'
-project = '{CD_windows}'
-target = 'My Computer'
-build_spec = 'Configuration Release'
-dependency_target = 'Windows'
-
-[[build.steps]]
-name = 'Data Sharing Framework Custom Device Engine - Windows'
-type = 'lvBuildSpec'
-project = '{CD_windows}'
-target = 'My Computer'
-build_spec = 'Engine Release'
-dependency_target = 'Windows'
+#[[build.steps]]
+#name = 'Data Sharing Framework Custom Device Configuration - Windows'
+#type = 'lvBuildSpec'
+#project = '{CD_windows}'
+#target = 'My Computer'
+#build_spec = 'Configuration Release'
+#dependency_target = 'Windows'
 
 #[[build.steps]]
-#name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
+#name = 'Data Sharing Framework Custom Device Engine - Windows'
 #type = 'lvBuildSpec'
-#project = '{CD_pharlap}'
-#target = 'RT PXI Target'
+#project = '{CD_windows}'
+#target = 'My Computer'
 #build_spec = 'Engine Release'
-#dependency_target = 'pharlap\\x86'
+#dependency_target = 'Windows'
+
+[[build.steps]]
+name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
+type = 'lvBuildSpec'
+project = '{CD_pharlap}'
+target = 'RT PXI Target'
+build_spec = 'Engine Release'
+dependency_target = 'PharLap'
 
 #[[build.steps]]
 #name = 'Data Sharing Framework Custom Device Engine - Linux RT arm'
