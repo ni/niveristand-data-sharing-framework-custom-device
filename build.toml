@@ -72,7 +72,7 @@ type = 'lvBuildSpec'
 project = '{CD_windows}'
 target = 'My Computer'
 build_spec = 'Engine Release'
-dependency_target = 'win\\x86'
+dependency_target = 'Windows'
 
 #[[build.steps]]
 #name = 'Data Sharing Framework Custom Device Engine - Pharlap x86'
