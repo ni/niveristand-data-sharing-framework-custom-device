@@ -148,18 +148,18 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Build/Pre-Build Action (Linux RT).vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{27B26888-CB93-49ED-9A89-3C0D79B94D2A}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">../Built/Core/linux/arm</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">../Built/Core/Linux_32_ARM</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">DSF Core.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Core/linux/arm/DSF Core.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Core/Linux_32_ARM/DSF Core.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Core/linux/arm</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Core/Linux_32_ARM</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D70188A2-6E45-4CEA-99DF-BCCA42064DBE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{959CD8F6-82C8-4D36-9535-16C62A4572D6}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux RT ARM/DSF Core.lvlib</Property>
