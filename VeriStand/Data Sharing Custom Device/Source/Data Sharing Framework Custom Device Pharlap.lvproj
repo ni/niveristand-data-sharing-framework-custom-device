@@ -414,19 +414,19 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4E90626A-6DF7-4621-A062-A4F452B6E581}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/pharlap/x86/DSF Engine Pharlap.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/PharLap/DSF Engine Pharlap.llb</Property>
 				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/pharlap/x86/DSF Engine Pharlap.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/PharLap/DSF Engine Pharlap.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/pharlap/x86</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/PharLap</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{93F06B9C-09DC-488C-A7CE-964F98AA1316}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{10C24E39-C9F6-463D-8940-B7BA62811026}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/DSF Engine.lvlib/RT Driver VI.vi</Property>
