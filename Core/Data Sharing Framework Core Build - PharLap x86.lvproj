@@ -134,20 +134,20 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Build/Pre-Build Action (Pharlap x86).vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{19113C8B-C1E1-4762-83FF-D3AEEA454CA5}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">../Built/Core/pharlap/x86</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">../Built/Core/PharLap</Property>
 				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">DSF Core.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Core/pharlap/x86/DSF Core.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Core/PharLap/DSF Core.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Core/pharlap/x86/Support</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Core/PharLap/Support</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3647B9A2-50AD-44E8-AD9D-259735EF2972}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F98414A3-7960-4278-82C8-5841200CF5DB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Pharlap x86/DSF Core.lvlib</Property>

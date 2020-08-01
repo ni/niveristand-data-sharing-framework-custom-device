@@ -712,14 +712,14 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F44280A2-8E8C-42F2-A687-C3240BE4FC9A}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/linux/x64/DSF Engine Linux.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/Linux_x64/DSF Engine Linux.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/linux/x64/DSF Engine Linux.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/Linux_x64/DSF Engine Linux.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/linux/x64</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
