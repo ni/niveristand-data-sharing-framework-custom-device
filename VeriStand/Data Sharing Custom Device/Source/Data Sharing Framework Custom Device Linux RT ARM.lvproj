@@ -386,10 +386,10 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C6D45B23-7F5B-4C71-9DE9-20A1207D2007}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/Linux_32_ARM/DSF Engine Linux.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">../Built/Custom Device/Linux_32_ARM/DSF Engine LinuxARM.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/Linux_32_ARM/DSF Engine Linux.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/Linux_32_ARM/DSF Engine LinuxARM.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
