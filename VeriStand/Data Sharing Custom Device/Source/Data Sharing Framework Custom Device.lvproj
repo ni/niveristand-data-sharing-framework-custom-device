@@ -397,23 +397,22 @@
 			<Item Name="Configuration Release" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{F7E936A1-C50B-4217-AC2B-A4DA3629CD4B}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Configuration Release</Property>
-				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Device</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Device/Windows</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E8035317-FDF9-4FC1-9EF0-1450E8CAE472}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device/Windows</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/Windows</Property>
 				<Property Name="Destination[2].destName" Type="Str">DSF Configuration LLB</Property>
-				<Property Name="Destination[2].path" Type="Path">../Built/Custom Device/DSF Configuration.llb</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Custom Device/Windows/DSF Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FF5D026F-FC30-4B37-8D3F-3B389BA402E2}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2D9F8C6E-01AB-472E-BD74-F72528B770B8}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Data Sharing Framework.xml</Property>
