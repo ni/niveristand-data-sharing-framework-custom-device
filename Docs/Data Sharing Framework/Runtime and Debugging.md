@@ -43,40 +43,24 @@ The Framework creates and maintains a log file for capturing state changes and e
 
 Example Output:
 
-\[000000.000002s\] \[  OK  \] Logger Initialized
-
-\[000000.012185s\] \[  OK  \] Framework Initialized
-
-\[000000.033631s\] \[  OK  \] Dispatcher Start
-
-\[000000.038481s\] \[  OK  \] UDP 0 Start
-
-\[000000.040495s\] \[  OK  \] UDP 1 Start
-
-\[000000.042519s\] \[  OK  \] Framework Start
-
-\[000000.542140s\] \[  OK  \] Framework Rx
-
-\[000000.550341s\] \[  OK  \] Dispatcher Set Inline Buffer
-
-\[000000.552505s\] \[  OK  \] Framework Tx
-
-\[000000.554602s\] \[  OK  \] Dispatcher Rx
-
-\[000000.556700s\] \[  OK  \] Dispatcher Tx
-
-\[000000.560178s\] \[  OK  \] UDP 0 Set Inline Buffer
-
-\[000000.562259s\] \[  OK  \] UDP 1 Set Inline Buffer
-
-\[000000.564423s\] \[  OK  \] UDP 1 Tx
-
-\[000001.543557s\] \[  OK  \] UDP 0 Rx
-
-\[000016.493422s\] \[  OK  \] Dispatcher Shutdown
-
-\[000016.597707s\] \[  OK  \] UDP 1 Shutdown
-
-\[000016.678006s\] \[  OK  \] UDP 0 Shutdown
-
-\[000016.699663s\] \[  OK  \] Logger Shutdown
+```
+[000000.000002s] [  OK  ] Logger Initialized
+[000000.012185s] [  OK  ] Framework Initialized
+[000000.033631s] [  OK  ] Dispatcher Start
+[000000.038481s] [  OK  ] UDP 0 Start
+[000000.040495s] [  OK  ] UDP 1 Start
+[000000.042519s] [  OK  ] Framework Start
+[000000.542140s] [  OK  ] Framework Rx
+[000000.550341s] [  OK  ] Dispatcher Set Inline Buffer
+[000000.552505s] [  OK  ] Framework Tx
+[000000.554602s] [  OK  ] Dispatcher Rx
+[000000.556700s] [  OK  ] Dispatcher Tx
+[000000.560178s] [  OK  ] UDP 0 Set Inline Buffer
+[000000.562259s] [  OK  ] UDP 1 Set Inline Buffer
+[000000.564423s] [  OK  ] UDP 1 Tx
+[000001.543557s] [  OK  ] UDP 0 Rx
+[000016.493422s] [  OK  ] Dispatcher Shutdown
+[000016.597707s] [  OK  ] UDP 1 Shutdown
+[000016.678006s] [  OK  ] UDP 0 Shutdown
+[000016.699663s] [  OK  ] Logger Shutdown
+```
