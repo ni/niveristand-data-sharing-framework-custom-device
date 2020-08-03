@@ -13,7 +13,7 @@
     <Type>Action</Type>
     <Item2Launch>
       <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Initialization VI.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Initialization VI.vi</Path>
     </Item2Launch>
   </InitializationVI>
   <CustomDeviceVI>
@@ -74,19 +74,19 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Framework Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Framework Page.vi</Path>
       </Item2Launch>
 	  <ActionVIOnLoad>
 		<Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\ActionVIOnLoad.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\ActionVIOnLoad.vi</Path>
 	  </ActionVIOnLoad>
 	  <ActionVIOnSave>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\ActionVIOnSave.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\ActionVIOnSave.vi</Path>
       </ActionVIOnSave>
 	  <ActionVIOnDownload>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\ActionVIOnDownload.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\ActionVIOnDownload.vi</Path>
       </ActionVIOnDownload>
     </Page>
     <Page>
@@ -101,7 +101,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Plugin Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Plugin Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -116,7 +116,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Thread Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Thread Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -131,7 +131,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Group Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Group Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -146,7 +146,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Transfer Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Transfer Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -161,7 +161,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Data Channel Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Data Channel Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -176,7 +176,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Status Section Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Status Section Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -191,7 +191,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Status Channel Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Status Channel Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -206,7 +206,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Performance Channel Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Performance Channel Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -221,7 +221,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Monitoring Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Monitoring Page.vi</Path>
       </Item2Launch>
     </Page>
     <Page>
@@ -236,7 +236,7 @@
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\Data Sharing Framework\Windows\DSF Configuration.llb\Data Section Page.vi</Path>
+		<Path>Custom Devices\Data Sharing Framework\DSF Configuration.llb\Data Section Page.vi</Path>
       </Item2Launch>
     </Page>
   </Pages>
