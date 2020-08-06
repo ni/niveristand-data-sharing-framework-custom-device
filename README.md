@@ -7,8 +7,7 @@ The LabVIEW source for code in this repository is saved for LabVIEW 2017, but is
 ## Dependencies
 The following top-level dependencies are required on the build machine to use the repository:
 
-- [LabVIEW Professional Development System](http:/ni.com/labview)
-- [Memory Manager API](https://github.com/ni/labview-memory-management-tools/releases/latest)
+- [NI VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
 
 ## Git History & Rebasing Policy
 Branch rebasing and other history modifications will be listed here, with several notable exceptions:
