@@ -10,7 +10,7 @@
 				<String>DSF UDP Loopback Simple</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.1</String>
+				<String>1.0.0.2</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -1523,6 +1523,24 @@
 				</Property>
 			</Properties>
 			<Errors />
+			<Alias Name="Output" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
+				<Description />
+				<Properties>
+					<Property Name="Referenced Channel">
+						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[0] Thread/[0] Group/[0] Transfer/[000000] Channel" />
+					</Property>
+				</Properties>
+				<Errors />
+			</Alias>
+			<Alias Name="Input" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
+				<Description />
+				<Properties>
+					<Property Name="Referenced Channel">
+						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[1] Thread/[0] Group/[0] Transfer/[000000] Channel" />
+					</Property>
+				</Properties>
+				<Errors />
+			</Alias>
 		</Section>
 		<Section Name="Scales" TypeGUID="032c8aec-ce5b-6d40-06c5-5703bbc7ccee">
 			<Description />
