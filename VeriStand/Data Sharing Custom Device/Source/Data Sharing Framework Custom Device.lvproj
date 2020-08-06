@@ -24,7 +24,7 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
 				<Item Name="Assets" Type="Folder">
-					<Item Name="12201Test.nivssdf" Type="Document" URL="../Tests/System/Assets/12201Test.nivssdf"/>
+					<Item Name="DSF UDP Loopback Simple.nivssdf" Type="Document" URL="../Tests/System/Assets/DSF UDP Loopback Simple.nivssdf"/>
 				</Item>
 				<Item Name="DSF CD System Tests.lvclass" Type="LVClass" URL="../Tests/System/DSF CD System Tests.lvclass"/>
 				<Item Name="targets.ini" Type="Document" URL="../Tests/System/targets.ini"/>
