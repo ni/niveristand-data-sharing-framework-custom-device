@@ -44,12 +44,12 @@ project = '{Core_pharlap}'
 target = 'Pharlap x86'
 build_spec = 'Data Sharing Framework Core'
 
-[[build.steps]]
-name = 'Data Sharing Framework Core - Linux RT ARM'
-type = 'lvBuildSpec'
-project = '{Core_linux_arm}'
-target = 'Linux RT ARM'
-build_spec = 'Data Sharing Framework Core'
+#[[build.steps]]
+#name = 'Data Sharing Framework Core - Linux RT ARM'
+#type = 'lvBuildSpec'
+#project = '{Core_linux_arm}'
+#target = 'Linux RT ARM'
+#build_spec = 'Data Sharing Framework Core'
 
 [[build.steps]]
 name = 'Data Sharing Framework Core - Linux RT x64'
@@ -82,13 +82,13 @@ target = 'RT PXI Target'
 build_spec = 'Engine Release'
 dependency_target = 'PharLap'
 
-[[build.steps]]
-name = 'Data Sharing Framework Custom Device Engine - Linux RT arm'
-type = 'lvBuildSpec'
-project = '{CD_linuxRT_arm}'
-target = 'Linux RT ARM'
-build_spec = 'Engine Release'
-dependency_target = 'Linux_32_ARM'
+#[[build.steps]]
+#name = 'Data Sharing Framework Custom Device Engine - Linux RT arm'
+#type = 'lvBuildSpec'
+#project = '{CD_linuxRT_arm}'
+#target = 'Linux RT ARM'
+#build_spec = 'Engine Release'
+#dependency_target = 'Linux_32_ARM'
 
 [[build.steps]]
 name = 'Data Sharing Framework Custom Device Engine - Linux RT x64'
