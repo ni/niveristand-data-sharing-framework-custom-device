@@ -10,13 +10,13 @@
 				<String>DSF GERM Loopback Simple</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.1</String>
+				<String>1.0.0.8</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
 			</Property>
 			<Property Name="Creation Date">
-				<Double>3679917699.7265773</Double>
+				<Double>3680186286.2771993</Double>
 			</Property>
 		</Properties>
 		<Errors />
@@ -28,10 +28,10 @@
 				<Description />
 				<Properties>
 					<Property Name="OS">
-						<String>Windows</String>
+						<String>PharLap</String>
 					</Property>
 					<Property Name="IP Address">
-						<String />
+						<String>10.2.109.77</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -97,6 +97,9 @@
 						<Double>15</Double>
 					</Property>
 					<Property Name="FPGAScanInterfaceMode">
+						<U16>0</U16>
+					</Property>
+					<Property Name="Timing Source Settings">
 						<U16>0</U16>
 					</Property>
 				</Properties>
@@ -231,11 +234,47 @@
 							<Property Name="user.CD.config version">
 								<Variant>
 									<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-									<Data>AAAAlBcAgAAAAAAFAAtABwAFbWFqb3IAC0AHAAVtaW5vcgAJQAcAA2ZpeAAOQDD/////BWJ1aWxkAEcA8QAAAAAAAAACD0RTRiBDb3JlLmx2bGlicBREU0YgVmVyc2lvbiBJbmZvLmN0bAAaQFAABAAAAAEAAgADB3ZlcnNpb24AAQAEAAAAAQAAAAAAAAAAAAAAAAAAAAA=</Data>
+									<Data>AAAAlBcAgAAAAAAFAAtABwAFbWFqb3IAC0AHAAVtaW5vcgAJQAcAA2ZpeAAOQDD/////BWJ1aWxkAEcA8QAAAAAAAAACD0RTRiBDb3JlLmx2bGlicBREU0YgVmVyc2lvbiBJbmZvLmN0bAAaQFAABAAAAAEAAgADB3ZlcnNpb24AAQAEAAAAAQAAAAQAAAAAAAAAAAAAAAA=</Data>
 								</Variant>
 							</Property>
 							<Property Name="user.CD.dsf.components">
-								<String>C:\Users\Public\Documents\National Instruments\NI VeriStand 2017\Custom Devices\Data Sharing Framework\Windows\Components</String>
+								<String>C:\Users\Public\Documents\National Instruments\NI VeriStand 2017\Custom Devices\Data Sharing Framework\Pharlap\Components</String>
+							</Property>
+							<Property Name="Dependency_1">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\DSF Core.lvlibp">
+									<Version />
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Core.lvlibp</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>db4abdec06d85478c612a490f6c52149</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_2">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\DSF Core.lvlibp">
+									<Version />
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Core.lvlibp</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>db4abdec06d85478c612a490f6c52149</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_3">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\Components\GE Reflective Memory.lvlibp">
+									<Version>component</Version>
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\Components\GE Reflective Memory.lvlibp</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>02fb951632b4f015be25309a4d4a03e2</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_4">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\Components\UDP.lvlibp">
+									<Version>component</Version>
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\Components\UDP.lvlibp</RTDestination>
+									<SupportedTarget>PharLap</SupportedTarget>
+									<MD5>c8bc5aa50c5d09ba3fd79a7da88e9f3a</MD5>
+								</DependentFile>
 							</Property>
 						</Properties>
 						<Errors />
@@ -274,7 +313,7 @@
 									<Property Name="user.CD.component settings">
 										<Variant>
 											<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-											<Data>AAABKhcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAQAAABRHRSBSZWZsZWN0aXZlIE1lbW9yeQAAAAIAAAASdmlzYSByZXNvdXJjZSBuYW1lAAAAAAAAAA1kbWEgd2FpdCBtb2RlAAAACWludGVycnVwdAAAAAA=</Data>
+											<Data>AAABORcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAQAAABRHRSBSZWZsZWN0aXZlIE1lbW9yeQAAAAIAAAASdmlzYSByZXNvdXJjZSBuYW1lAAAAD1BYSTg6OjE1OjpJTlNUUgAAAA1kbWEgd2FpdCBtb2RlAAAACWludGVycnVwdAAAAAA=</Data>
 										</Variant>
 									</Property>
 								</Properties>
@@ -331,7 +370,7 @@
 												<Property Name="user.CD.component settings">
 													<Variant>
 														<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-														<Data>AAAA8hcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAQAAABRHRSBSZWZsZWN0aXZlIE1lbW9yeQAAAAAAAAAA</Data>
+														<Data>AAAA1hcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAAAAAAA=</Data>
 													</Variant>
 												</Property>
 											</Properties>
@@ -379,32 +418,11 @@
 										</Channel>
 									</Section>
 								</Section>
-							</Section>
-							<Section Name="[1] Thread" TypeGUID="41c5f14b-093c-4be0-bff4-80a9437906d9">
-								<Description />
-								<Properties>
-									<Property Name="user.CD.ID">
-										<I32>1</I32>
-									</Property>
-									<Property Name="user.CD.core thread settings">
-										<Variant>
-											<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-											<Data>AAAAsRcAgAAAAAADAA9AAwAJcHJvY2Vzc29yABVAAgAPcHJpb3JpdHkgb2Zmc2V0AHcA8QAAAAAAAAADD0RTRiBDb3JlLmx2bGlicBxUaHJlYWQgQ29uZmlndXJhdGlvbi5sdmNsYXNzHUNvcmUgVGhyZWFkIENvbmZpZ3VyYXRpb24uY3RsACRAUAACAAAAARR0aHJlYWQgY29uZmlndXJhdGlvbgAAAQAC/////gAAAAAAAA==</Data>
-										</Variant>
-									</Property>
-									<Property Name="user.CD.component settings">
-										<Variant>
-											<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-											<Data>AAABKhcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAQAAABRHRSBSZWZsZWN0aXZlIE1lbW9yeQAAAAIAAAASdmlzYSByZXNvdXJjZSBuYW1lAAAAAAAAAA1kbWEgd2FpdCBtb2RlAAAACWludGVycnVwdAAAAAA=</Data>
-										</Variant>
-									</Property>
-								</Properties>
-								<Errors />
-								<Section Name="[0] Group" TypeGUID="473b4065-4cef-436d-b68a-ef19370f2b9b">
+								<Section Name="[1] Group" TypeGUID="473b4065-4cef-436d-b68a-ef19370f2b9b">
 									<Description />
 									<Properties>
 										<Property Name="user.CD.ID">
-											<I32>0</I32>
+											<I32>1</I32>
 										</Property>
 										<Property Name="user.CD.core group settings">
 											<Variant>
@@ -1502,6 +1520,24 @@
 				</Property>
 			</Properties>
 			<Errors />
+			<Alias Name="Send" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
+				<Description />
+				<Properties>
+					<Property Name="Referenced Channel">
+						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[0] Thread/[0] Group/[0] Transfer/[000000] Channel" />
+					</Property>
+				</Properties>
+				<Errors />
+			</Alias>
+			<Alias Name="Receive" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
+				<Description />
+				<Properties>
+					<Property Name="Referenced Channel">
+						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[0] Thread/[1] Group/[0] Transfer/[000000] Channel" />
+					</Property>
+				</Properties>
+				<Errors />
+			</Alias>
 		</Section>
 		<Section Name="Scales" TypeGUID="032c8aec-ce5b-6d40-06c5-5703bbc7ccee">
 			<Description />
