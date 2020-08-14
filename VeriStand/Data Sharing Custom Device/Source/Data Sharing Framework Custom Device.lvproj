@@ -23,12 +23,20 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
-				<Item Name="Assets" Type="Folder">
-					<Item Name="DSF GERM Loopback Simple.nivssdf" Type="Document" URL="../Tests/System/Assets/DSF GERM Loopback Simple.nivssdf"/>
-					<Item Name="DSF UDP Loopback Simple.nivssdf" Type="Document" URL="../Tests/System/Assets/DSF UDP Loopback Simple.nivssdf"/>
+				<Item Name="GE Reflective Memory" Type="Folder">
+					<Item Name="Assets" Type="Folder">
+						<Item Name="DSF GERM Loopback Simple.nivssdf" Type="Document" URL="../Tests/System/GE Reflective Memory/Assets/DSF GERM Loopback Simple.nivssdf"/>
+					</Item>
+					<Item Name="DSF CD GE Reflective Memory System Tests.lvclass" Type="LVClass" URL="../Tests/System/GE Reflective Memory/DSF CD GE Reflective Memory System Tests.lvclass"/>
+					<Item Name="targets.ini" Type="Document" URL="../Tests/System/GE Reflective Memory/targets.ini"/>
 				</Item>
-				<Item Name="DSF CD System Tests.lvclass" Type="LVClass" URL="../Tests/System/DSF CD System Tests.lvclass"/>
-				<Item Name="targets.ini" Type="Document" URL="../Tests/System/targets.ini"/>
+				<Item Name="UDP" Type="Folder">
+					<Item Name="Assets" Type="Folder">
+						<Item Name="DSF UDP Loopback Simple.nivssdf" Type="Document" URL="../Tests/System/UDP/Assets/DSF UDP Loopback Simple.nivssdf"/>
+					</Item>
+					<Item Name="DSF CD UDP System Tests.lvclass" Type="LVClass" URL="../Tests/System/UDP/DSF CD UDP System Tests.lvclass"/>
+					<Item Name="targets.ini" Type="Document" URL="../Tests/System/UDP/targets.ini"/>
+				</Item>
 			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
@@ -435,7 +443,6 @@
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Block DMA.vi" Type="VI" URL="../Tests/System/Block DMA.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
