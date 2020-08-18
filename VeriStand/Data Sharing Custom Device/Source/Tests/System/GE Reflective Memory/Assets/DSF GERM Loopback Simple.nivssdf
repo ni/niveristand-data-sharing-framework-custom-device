@@ -238,10 +238,10 @@
 								</Variant>
 							</Property>
 							<Property Name="user.CD.dsf.components">
-								<String>Custom Devices\Data Sharing Framework\Pharlap\Components</String>
+								<String>Custom Devices\Data Sharing Framework\PharLap\Components</String>
 							</Property>
 							<Property Name="Dependency_1">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\DSF Core.lvlibp">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\PharLap\DSF Core.lvlibp">
 									<Version />
 									<ForceDownload>true</ForceDownload>
 									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Core.lvlibp</RTDestination>
@@ -250,7 +250,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Dependency_2">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\DSF Core.lvlibp">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\PharLap\DSF Core.lvlibp">
 									<Version />
 									<ForceDownload>true</ForceDownload>
 									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Core.lvlibp</RTDestination>
@@ -259,7 +259,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Dependency_3">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\Components\GE Reflective Memory.lvlibp">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\PharLap\Components\GE Reflective Memory.lvlibp">
 									<Version>component</Version>
 									<ForceDownload>true</ForceDownload>
 									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\Components\GE Reflective Memory.lvlibp</RTDestination>
@@ -268,7 +268,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Dependency_4">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Pharlap\Components\UDP.lvlibp">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\PharLap\Components\UDP.lvlibp">
 									<Version>component</Version>
 									<ForceDownload>true</ForceDownload>
 									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\Components\UDP.lvlibp</RTDestination>
