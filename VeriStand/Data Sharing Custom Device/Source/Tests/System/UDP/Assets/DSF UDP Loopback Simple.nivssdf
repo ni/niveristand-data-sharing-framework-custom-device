@@ -256,7 +256,7 @@
 								</Variant>
 							</Property>
 							<Property Name="user.CD.dsf.components">
-								<String>C:\Users\Public\Documents\National Instruments\NI VeriStand 2017\Custom Devices\Data Sharing Framework\Windows\Components</String>
+								<String>Custom Devices\Data Sharing Framework\Windows\Components</String>
 							</Property>
 						</Properties>
 						<Errors />
