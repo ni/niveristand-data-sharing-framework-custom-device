@@ -3,20 +3,20 @@
 	<MD5Checksum />
 	<Version Major="2017" Minor="0" Fix="0" Build="0" />
 	<Content>Definition</Content>
-	<Root Name="DSF UDP Loopback Simple" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00">
+	<Root Name="DSF UDP Loopback Simple Linux_x64" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00">
 		<Description />
 		<Properties>
 			<Property Name="Name">
-				<String>DSF UDP Loopback Simple</String>
+				<String>DSF UDP Loopback Simple Linux_x64</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.2</String>
+				<String>1.0.0.4</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
 			</Property>
 			<Property Name="Creation Date">
-				<Double>3679322170.6869941</Double>
+				<Double>3680781058.5599289</Double>
 			</Property>
 		</Properties>
 		<Errors />
@@ -28,10 +28,10 @@
 				<Description />
 				<Properties>
 					<Property Name="OS">
-						<String>Windows</String>
+						<String>Linux_x64</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>localhost</String>
+						<String>vs-eco-slave-8880</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -205,24 +205,6 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Driver VI Path_1">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Linux_32_ARM\DSF Engine LinuxARM.llb\RT Driver VI.vi">
-									<Version>1.0.0</Version>
-									<ForceDownload>false</ForceDownload>
-									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Engine LinuxARM.llb\RT Driver VI.vi</RTDestination>
-									<SupportedTarget>Linux_32_ARM</SupportedTarget>
-									<MD5 />
-								</DependentFile>
-							</Property>
-							<Property Name="Driver VI Path_2">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\VxWorks\DSF Engine VxWorks.llb\RT Driver VI.vi">
-									<Version>1.0.0</Version>
-									<ForceDownload>false</ForceDownload>
-									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Engine VxWorks.llb\RT Driver VI.vi</RTDestination>
-									<SupportedTarget>VxWorks</SupportedTarget>
-									<MD5 />
-								</DependentFile>
-							</Property>
-							<Property Name="Driver VI Path_3">
 								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\PharLap\DSF Engine Pharlap.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
@@ -231,7 +213,7 @@
 									<MD5 />
 								</DependentFile>
 							</Property>
-							<Property Name="Driver VI Path_4">
+							<Property Name="Driver VI Path_2">
 								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Windows\DSF Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
@@ -256,7 +238,34 @@
 								</Variant>
 							</Property>
 							<Property Name="user.CD.dsf.components">
-								<String>Custom Devices\Data Sharing Framework\Windows\Components</String>
+								<String>Custom Devices\Data Sharing Framework\Linux_x64\Components</String>
+							</Property>
+							<Property Name="Dependency_1">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Linux_x64\DSF Core.lvlibp">
+									<Version />
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Core.lvlibp</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>a379a62288afe5fe028e9531ab63085a</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_2">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Linux_x64\DSF Core.lvlibp">
+									<Version />
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Core.lvlibp</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>a379a62288afe5fe028e9531ab63085a</MD5>
+								</DependentFile>
+							</Property>
+							<Property Name="Dependency_3">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Linux_x64\Components\UDP.lvlibp">
+									<Version>component</Version>
+									<ForceDownload>true</ForceDownload>
+									<RTDestination>C:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\Components\UDP.lvlibp</RTDestination>
+									<SupportedTarget>Linux_x64</SupportedTarget>
+									<MD5>eecc3e960412f768c799442ac4245316</MD5>
+								</DependentFile>
 							</Property>
 						</Properties>
 						<Errors />
@@ -1523,20 +1532,20 @@
 				</Property>
 			</Properties>
 			<Errors />
-			<Alias Name="Output" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
-				<Description />
-				<Properties>
-					<Property Name="Referenced Channel">
-						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[0] Thread/[0] Group/[0] Transfer/[000000] Channel" />
-					</Property>
-				</Properties>
-				<Errors />
-			</Alias>
 			<Alias Name="Input" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
 				<Description />
 				<Properties>
 					<Property Name="Referenced Channel">
 						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[1] Thread/[0] Group/[0] Transfer/[000000] Channel" />
+					</Property>
+				</Properties>
+				<Errors />
+			</Alias>
+			<Alias Name="Output" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31">
+				<Description />
+				<Properties>
+					<Property Name="Referenced Channel">
+						<DependentNode Path="Targets/Controller/Custom Devices/Data Sharing Framework/[0] Plugin/[0] Thread/[0] Group/[0] Transfer/[000000] Channel" />
 					</Property>
 				</Properties>
 				<Errors />
