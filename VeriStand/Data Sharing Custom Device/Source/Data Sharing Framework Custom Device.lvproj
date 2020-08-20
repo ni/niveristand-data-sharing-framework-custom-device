@@ -32,7 +32,9 @@
 				</Item>
 				<Item Name="UDP" Type="Folder">
 					<Item Name="Assets" Type="Folder">
-						<Item Name="DSF UDP Loopback Simple.nivssdf" Type="Document" URL="../Tests/System/UDP/Assets/DSF UDP Loopback Simple.nivssdf"/>
+						<Item Name="DSF UDP Loopback Simple Linux_x64.nivssdf" Type="Document" URL="../Tests/System/UDP/Assets/DSF UDP Loopback Simple Linux_x64.nivssdf"/>
+						<Item Name="DSF UDP Loopback Simple Pharlap.nivssdf" Type="Document" URL="../Tests/System/UDP/Assets/DSF UDP Loopback Simple Pharlap.nivssdf"/>
+						<Item Name="DSF UDP Loopback Simple Windows.nivssdf" Type="Document" URL="../Tests/System/UDP/Assets/DSF UDP Loopback Simple Windows.nivssdf"/>
 					</Item>
 					<Item Name="DSF CD UDP System Tests.lvclass" Type="LVClass" URL="../Tests/System/UDP/DSF CD UDP System Tests.lvclass"/>
 					<Item Name="targets.ini" Type="Document" URL="../Tests/System/UDP/targets.ini"/>
