@@ -119,3 +119,10 @@ payload_dir = 'Built\Scripting'
 install_destination = 'ni-paths-LV{veristand_version}DIR\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
 control_file = 'control_dsf_scripting'
 package_output_dir = 'Built'
+
+[[package]]
+type = 'nipkg'
+payload_dir = 'Built\Errors'
+install_destination = 'ni-paths-NISHAREDDIR\LabVIEW Run-Time\{veristand_version}\errors\English'
+control_file = 'control_dsf_errors'
+package_output_dir = 'Built'
