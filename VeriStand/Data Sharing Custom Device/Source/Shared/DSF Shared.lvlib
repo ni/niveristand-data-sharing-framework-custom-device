@@ -21,6 +21,9 @@
 			<Item Name="Thread Page GUID.vi" Type="VI" URL="../Thread Page GUID.vi"/>
 			<Item Name="Transfer Page GUID.vi" Type="VI" URL="../Transfer Page GUID.vi"/>
 		</Item>
+		<Item Name="Page Names" Type="Folder">
+			<Item Name="Main Page Name.vi" Type="VI" URL="../Main Page Name.vi"/>
+		</Item>
 		<Item Name="Property Names" Type="Folder">
 			<Item Name="dsf components directory property name.vi" Type="VI" URL="../../System Explorer/dsf components directory property name.vi"/>
 			<Item Name="dsf config file property name.vi" Type="VI" URL="../../System Explorer/dsf config file property name.vi"/>
@@ -40,6 +43,7 @@
 			<Item Name="Get Core Thread Settings.vi" Type="VI" URL="../Get Core Thread Settings.vi"/>
 			<Item Name="Get Core Transfer Settings.vi" Type="VI" URL="../Get Core Transfer Settings.vi"/>
 		</Item>
+		<Item Name="Configuration Version to Configuration Info Typedef.vi" Type="VI" URL="../Configuration Version to Configuration Info Typedef.vi"/>
 		<Item Name="Get Component Settings.vi" Type="VI" URL="../Get Component Settings.vi"/>
 		<Item Name="Get Components Target Directory.vi" Type="VI" URL="../Get Components Target Directory.vi"/>
 		<Item Name="Get Configuration File Target Path.vi" Type="VI" URL="../Get Configuration File Target Path.vi"/>

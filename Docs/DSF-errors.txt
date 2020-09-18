@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+https://github.com/ni/niveristand-data-sharing-framework-custom-device/tree/main
+</nicomment>
+<nierror code="537730">
+An instance of the Data Sharing Framework already exists under the target. Only one instance of the Data Sharing Framework custom device can be added per target.
+</nierror>
+<nierror code="537731">
+The input node ID does not match the type for a Data Sharing Framework custom device.
+</nierror>
+</nidocument>

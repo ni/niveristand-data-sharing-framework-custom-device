@@ -67,6 +67,14 @@ build_spec = 'Configuration Release'
 dependency_target = 'Windows'
 
 [[build.steps]]
+name = 'Data Sharing Framework Custom Device Scripting API - Windows'
+type = 'lvBuildSpec'
+project = '{CD_windows}'
+target = 'My Computer'
+build_spec = 'Scripting API'
+dependency_target = 'Windows'
+
+[[build.steps]]
 name = 'Data Sharing Framework Custom Device Engine - Windows'
 type = 'lvBuildSpec'
 project = '{CD_windows}'
@@ -98,9 +106,16 @@ target = 'Linux RT x64'
 build_spec = 'Engine Release'
 dependency_target = 'Linux_x64'
 
-[package]
+[[package]]
 type = 'nipkg'
 payload_dir = 'Built\Custom Device'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\Data Sharing Framework'
 control_file = 'control_dsf_cd'
+package_output_dir = 'Built'
+
+[[package]]
+type = 'nipkg'
+payload_dir = 'Built\Scripting'
+install_destination = 'ni-paths-LV{veristand_version}DIR\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
+control_file = 'control_dsf_scripting'
 package_output_dir = 'Built'
