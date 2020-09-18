@@ -21,6 +21,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Documents" Type="Folder">
+			<Item Name="DSF-errors.txt" Type="Document" URL="../../../../Docs/DSF-errors.txt"/>
+		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
 				<Item Name="GE Reflective Memory" Type="Folder">
@@ -758,7 +761,6 @@
 			<Item Name="NationalInstruments.VeriStand.XMLReader" Type="Document" URL="NationalInstruments.VeriStand.XMLReader">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="temp_VI_UnderTest.vi" Type="VI" URL="../Tests/Unit/Set and Get Configuration/temp_VI_UnderTest.vi"/>
 			<Item Name="VeriStandTestCase.lvclass" Type="LVClass" URL="../../../../../niveristand-custom-device-testing-tools/VeriStandTestCase/VeriStandTestCase.lvclass"/>
 			<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="../../../../../niveristand-custom-device-testing-tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
 			<Item Name="visa32.dll" Type="Document" URL="visa32.dll">
@@ -906,8 +908,10 @@
 				<Property Name="Destination[0].path" Type="Path">../Built/Scripting API</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Scripting API/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E6D7C773-951C-4E2F-B211-52BEBBB849E3}</Property>
+				<Property Name="Destination[2].destName" Type="Str">Errors</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Errors</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E23DD4CB-55B0-49F4-9196-BB02378A3A35}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Data Sharing Framework Custom Device Scripting.lvlib</Property>
@@ -932,7 +936,10 @@
 				<Property Name="Source[5].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Exclude</Property>
 				<Property Name="Source[5].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Documents/DSF-errors.txt</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 		</Item>
 	</Item>
