@@ -10,10 +10,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="System Definition Files" Type="Folder" URL="../System Definition Files">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Assets" Type="Folder">
+			<Item Name="DSF_Empty.nivssdf" Type="Document" URL="../Assets/DSF_Empty.nivssdf"/>
+			<Item Name="DSF_UDP.nivssdf" Type="Document" URL="../Assets/DSF_UDP.nivssdf"/>
+			<Item Name="DSF_UDP_complete.dsf" Type="Document" URL="../Assets/DSF_UDP_complete.dsf"/>
+			<Item Name="DSF_UDP_complete.nivssdf" Type="Document" URL="../Assets/DSF_UDP_complete.nivssdf"/>
+			<Item Name="Empty.nivssdf" Type="Document" URL="../Assets/Empty.nivssdf"/>
 		</Item>
 		<Item Name="Add Data Sharing Framework with UDP Component to System Definition.vi" Type="VI" URL="../Add Data Sharing Framework with UDP Component to System Definition.vi"/>
+		<Item Name="Import Data Sharing Framework with UDP Component.vi" Type="VI" URL="../Import Data Sharing Framework with UDP Component.vi"/>
+		<Item Name="UDP - Receiver.vi" Type="VI" URL="../UDP - Receiver.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
