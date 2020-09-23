@@ -13,8 +13,10 @@
 		<Item Name="Assets" Type="Folder">
 			<Item Name="DSF_Empty.nivssdf" Type="Document" URL="../Assets/DSF_Empty.nivssdf"/>
 			<Item Name="DSF_UDP.nivssdf" Type="Document" URL="../Assets/DSF_UDP.nivssdf"/>
-			<Item Name="DSF_UDP_complete.dsf" Type="Document" URL="../Assets/DSF_UDP_complete.dsf"/>
-			<Item Name="DSF_UDP_complete.nivssdf" Type="Document" URL="../Assets/DSF_UDP_complete.nivssdf"/>
+			<Item Name="DSF_UDP_Loopback.dsf" Type="Document" URL="../Assets/DSF_UDP_Loopback.dsf"/>
+			<Item Name="DSF_UDP_Loopback.nivssdf" Type="Document" URL="../Assets/DSF_UDP_Loopback.nivssdf"/>
+			<Item Name="DSF_UDP_Send.dsf" Type="Document" URL="../Assets/DSF_UDP_Send.dsf"/>
+			<Item Name="DSF_UDP_Send.nivssdf" Type="Document" URL="../Assets/DSF_UDP_Send.nivssdf"/>
 			<Item Name="Empty.nivssdf" Type="Document" URL="../Assets/Empty.nivssdf"/>
 		</Item>
 		<Item Name="Add Data Sharing Framework with UDP Component to System Definition.vi" Type="VI" URL="../Add Data Sharing Framework with UDP Component to System Definition.vi"/>

@@ -10,7 +10,7 @@
 				<String>DSF_UDP_Loopback</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.1</String>
+				<String>1.0.0.3</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -31,7 +31,7 @@
 						<String>Windows</String>
 					</Property>
 					<Property Name="IP Address">
-						<String />
+						<String>localhost</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -97,6 +97,9 @@
 						<Double>15</Double>
 					</Property>
 					<Property Name="FPGAScanInterfaceMode">
+						<U16>0</U16>
+					</Property>
+					<Property Name="Timing Source Settings">
 						<U16>0</U16>
 					</Property>
 				</Properties>
@@ -214,7 +217,7 @@
 								<U32>0</U32>
 							</Property>
 							<Property Name="Driver VI Path_0">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Linux_x64\DSF Engine Linux64.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Windows\DSF Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Engine Linux64.llb\RT Driver VI.vi</RTDestination>
@@ -223,7 +226,7 @@
 								</DependentFile>
 							</Property>
 							<Property Name="Driver VI Path_1">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\PharLap\DSF Engine Pharlap.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Data Sharing Framework\Windows\DSF Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Data Sharing Framework\DSF Engine Pharlap.llb\RT Driver VI.vi</RTDestination>
@@ -258,6 +261,12 @@
 							<Property Name="user.CD.dsf.components">
 								<String>Custom Devices\Data Sharing Framework\Windows\Components</String>
 							</Property>
+							<Property Name="user.CD.Debug">
+								<Boolean>true</Boolean>
+							</Property>
+							<Property Name="user.CD.dsf.show error dialog">
+								<Boolean>true</Boolean>
+							</Property>
 						</Properties>
 						<Errors />
 						<Section Name="[0] Scripted_DSF_UDP" TypeGUID="e36400aa-5528-4ac8-8885-6b99ede07395">
@@ -275,7 +284,7 @@
 								<Property Name="user.CD.component settings">
 									<Variant>
 										<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-										<Data>AAAA4RcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAQAAAANVRFAAAAAAAAAAAA==</Data>
+										<Data>AAAA1hcAgAAAAAAHABJAMP////8JY29tcG9uZW50AAxAMP////8Da2V5AA5AMP////8FdmFsdWUAEkBQAAIAAQACB3NldHRpbmcAFEBAAAH/////AAMGdmFsdWVzAABQAPEAAAAAAAAAAg9EU0YgQ29yZS5sdmxpYnAVRFNGIFNldHRpbmdzIEluZm8uY3RsACJAUAACAAAABBJjb21wb25lbnQgc2V0dGluZ3MAACBAQAAB/////wAFEmNvbXBvbmVudCBzZXR0aW5ncwAAAQAGAAAAAAAAAAA=</Data>
 									</Variant>
 								</Property>
 							</Properties>
