@@ -25,6 +25,12 @@
 			<Item Name="DSF-errors.txt" Type="Document" URL="../../../../Docs/DSF-errors.txt"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
+			<Item Name="Scripting" Type="Folder">
+				<Item Name="Examples" Type="Folder">
+					<Item Name="Scripting.lvclass" Type="LVClass" URL="../Tests/Scripting/Add Loopback/Scripting.lvclass"/>
+					<Item Name="targets.ini" Type="Document" URL="../Tests/Scripting/Add Loopback/targets.ini"/>
+				</Item>
+			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="GE Reflective Memory" Type="Folder">
 					<Item Name="Assets" Type="Folder">
@@ -159,7 +165,7 @@
 				<Item Name="Convert EOLs__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Convert EOLs__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
-				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
+				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi"/>
@@ -456,6 +462,7 @@
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Add Data Sharing Framework with UDP Component to System Definition.vi" Type="VI" URL="../Scripting Examples/Add Data Sharing Framework with UDP Component to System Definition.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -739,6 +746,7 @@
 				<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 			</Item>
 			<Item Name="GE 5565PIORC.lvclass" Type="LVClass" URL="../../../../../niveristand-data-sharing-framework-custom-device-plugins/Components/Transceivers/GE Reflective Memory/Driver/Source/GE 5565PIORC.lvclass"/>
+			<Item Name="Import Data Sharing Framework with UDP Component.vi" Type="VI" URL="../Scripting Examples/Import Data Sharing Framework with UDP Component.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -761,6 +769,7 @@
 			<Item Name="NationalInstruments.VeriStand.XMLReader" Type="Document" URL="NationalInstruments.VeriStand.XMLReader">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="UDP - Receiver.vi" Type="VI" URL="../Scripting Examples/UDP - Receiver.vi"/>
 			<Item Name="VeriStandTestCase.lvclass" Type="LVClass" URL="../../../../../niveristand-custom-device-testing-tools/VeriStandTestCase/VeriStandTestCase.lvclass"/>
 			<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="../../../../../niveristand-custom-device-testing-tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
 			<Item Name="visa32.dll" Type="Document" URL="visa32.dll">
