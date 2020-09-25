@@ -124,5 +124,6 @@ package_output_dir = 'Built'
 
 [package.payload_map]
 'Built\\Custom Device' = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\Data Sharing Framework'
-'Built\\Scripting' = 'ni-paths-LV{veristand_version}DIR\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
+'Built\\Scripting API' = 'ni-paths-LV{veristand_version}DIR\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
+'Built\\Scripting Examples' = 'ni-paths-LV{veristand_version}DIR\examples\NI VeriStand Custom Devices\Data Sharing Framework'
 'Built\\Errors' = 'ni-paths-NISHAREDDIR\Errors\English'
