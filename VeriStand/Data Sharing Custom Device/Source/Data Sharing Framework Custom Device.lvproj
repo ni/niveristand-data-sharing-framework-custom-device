@@ -27,8 +27,8 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Scripting" Type="Folder">
 				<Item Name="Examples" Type="Folder">
-					<Item Name="Scripting.lvclass" Type="LVClass" URL="../Tests/Scripting/Add Loopback/Scripting.lvclass"/>
-					<Item Name="targets.ini" Type="Document" URL="../Tests/Scripting/Add Loopback/targets.ini"/>
+					<Item Name="Scripting.lvclass" Type="LVClass" URL="../Tests/Scripting/Scripting.lvclass"/>
+					<Item Name="targets.ini" Type="Document" URL="../Tests/Scripting/targets.ini"/>
 				</Item>
 			</Item>
 			<Item Name="System" Type="Folder">
@@ -165,7 +165,7 @@
 				<Item Name="Convert EOLs__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Convert EOLs__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
-				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
+				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi"/>
