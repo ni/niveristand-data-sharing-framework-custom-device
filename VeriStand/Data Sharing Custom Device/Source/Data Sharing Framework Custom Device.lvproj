@@ -462,7 +462,6 @@
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Add Data Sharing Framework with UDP Component to System Definition.vi" Type="VI" URL="../Scripting Examples/Add Data Sharing Framework with UDP Component to System Definition.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -746,7 +745,6 @@
 				<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="../DSF Core.lvlibp/1abvi3w/vi.lib/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 			</Item>
 			<Item Name="GE 5565PIORC.lvclass" Type="LVClass" URL="../../../../../niveristand-data-sharing-framework-custom-device-plugins/Components/Transceivers/GE Reflective Memory/Driver/Source/GE 5565PIORC.lvclass"/>
-			<Item Name="Import Data Sharing Framework with UDP Component.vi" Type="VI" URL="../Scripting Examples/Import Data Sharing Framework with UDP Component.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -769,7 +767,7 @@
 			<Item Name="NationalInstruments.VeriStand.XMLReader" Type="Document" URL="NationalInstruments.VeriStand.XMLReader">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="UDP - Receiver.vi" Type="VI" URL="../Scripting Examples/UDP - Receiver.vi"/>
+			<Item Name="Scripting Examples.lvlib" Type="Library" URL="../Tests/Scripting/Scripting Examples.lvlib"/>
 			<Item Name="VeriStandTestCase.lvclass" Type="LVClass" URL="../../../../../niveristand-custom-device-testing-tools/VeriStandTestCase/VeriStandTestCase.lvclass"/>
 			<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="../../../../../niveristand-custom-device-testing-tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
 			<Item Name="visa32.dll" Type="Document" URL="visa32.dll">
