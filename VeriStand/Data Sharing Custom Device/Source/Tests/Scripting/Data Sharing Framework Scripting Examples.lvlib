@@ -13,7 +13,7 @@
 		<Item Name="DSF_UDP_Send.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_UDP_Send.nivssdf"/>
 		<Item Name="Empty.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/Empty.nivssdf"/>
 	</Item>
-	<Item Name="Add Data Sharing Framework with UDP Component to System Definition.vi" Type="VI" URL="../../../Scripting Examples/Add Data Sharing Framework with UDP Component to System Definition.vi"/>
+	<Item Name="Add Data Sharing Framework with UDP Component.vi" Type="VI" URL="../../../Scripting Examples/Add Data Sharing Framework with UDP Component.vi"/>
 	<Item Name="Import Data Sharing Framework with UDP Component.vi" Type="VI" URL="../../../Scripting Examples/Import Data Sharing Framework with UDP Component.vi"/>
 	<Item Name="UDP - Receiver.vi" Type="VI" URL="../../../Scripting Examples/UDP - Receiver.vi"/>
 </Library>
