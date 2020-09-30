@@ -71,6 +71,7 @@
 				</Item>
 				<Item Name="Main VI" Type="Folder">
 					<Item Name="Application Data.ctl" Type="VI" URL="../VIs/Data Viewer/Source/Main VI/Application Data.ctl"/>
+					<Item Name="Convert Data String to Display.vi" Type="VI" URL="../VIs/Convert Data String to Display.vi"/>
 					<Item Name="Create Menus.vi" Type="VI" URL="../VIs/Data Viewer/Source/Main VI/Create Menus.vi"/>
 					<Item Name="Display Tree Item.vi" Type="VI" URL="../VIs/Data Viewer/Source/Main VI/Display Tree Item.vi"/>
 					<Item Name="Highlight Text.vi" Type="VI" URL="../VIs/Data Viewer/Source/Main VI/Highlight Text.vi"/>
