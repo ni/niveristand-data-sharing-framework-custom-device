@@ -9,6 +9,9 @@ The following top-level dependencies are required on the build machine to use th
 
 - [NI VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
 
+## Build Notes for Contributors
+To fully load the source you must follow the [Manual Build Instructions](Docs/Manual%20Build%20Instructions.md)
+
 ## Git History & Rebasing Policy
 Branch rebasing and other history modifications will be listed here, with several notable exceptions:
 - Branches prefixed with `dev/` may be rebased, overwritten, or deleted at any time.
