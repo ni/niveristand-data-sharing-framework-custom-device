@@ -1,5 +1,11 @@
-# Manual Build Instructions for the Data Sharing Frameowrk
-These steps will allow you to manually build all of the components necessary to use the Data Sharing Framework Custom Device. Manual builds are not recommended for end-users of the Custom Device. Find the latest builds of the DSF Custom Device for supported versions of VeriStand at [DSF Custom Device Releases page](https://github.com/ni/niveristand-data-sharing-framework-custom-device/releases). Find the latest builds of DSF Components for supported versions of VeriStand at [DSF Components Releases page](https://github.com/ni/niveristand-data-sharing-framework-custom-device-plugins/releases).
+## Note to the End User
+Manual builds are not recommended for end users of the Custom Device, instead:
+
+1. Find the latest builds of the DSF Custom Device for supported versions of VeriStand at [DSF Custom Device Releases page](https://github.com/ni/niveristand-data-sharing-framework-custom-device/releases). 
+1. Find the latest builds of DSF Components for supported versions of VeriStand at [DSF Components Releases page](https://github.com/ni/niveristand-data-sharing-framework-custom-device-plugins/releases).
+
+# Manual Build Instructions for the Data Sharing Framework for Developers and Contributors
+Follow these steps to manually build all of the components necessary to load and use the Data Sharing Framework Custom Device. 
 
 Glossary of Terms:
 PPL = packed project library designated by the file extension lvlibp.
