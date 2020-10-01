@@ -1,5 +1,5 @@
-## Note to the End-User
-Manual builds are not recommended for end-users of the Custom Device, instead:
+## Note to the End User
+Manual builds are not recommended for end users of the Custom Device, instead:
 
 1. Find the latest builds of the DSF Custom Device for supported versions of VeriStand at [DSF Custom Device Releases page](https://github.com/ni/niveristand-data-sharing-framework-custom-device/releases). 
 1. Find the latest builds of DSF Components for supported versions of VeriStand at [DSF Components Releases page](https://github.com/ni/niveristand-data-sharing-framework-custom-device-plugins/releases).
