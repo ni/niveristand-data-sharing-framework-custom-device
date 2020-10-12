@@ -5,15 +5,15 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="Assets" Type="Folder">
-		<Item Name="DSF_Empty.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_Empty.nivssdf"/>
-		<Item Name="DSF_UDP.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_UDP.nivssdf"/>
-		<Item Name="DSF_UDP_Loopback.dsf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_UDP_Loopback.dsf"/>
-		<Item Name="DSF_UDP_Loopback.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_UDP_Loopback.nivssdf"/>
-		<Item Name="DSF_UDP_Send.dsf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_UDP_Send.dsf"/>
-		<Item Name="DSF_UDP_Send.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/DSF_UDP_Send.nivssdf"/>
-		<Item Name="Empty.nivssdf" Type="Document" URL="../../../Scripting Examples/Assets/Empty.nivssdf"/>
+		<Item Name="DSF_Empty.nivssdf" Type="Document" URL="../Assets/DSF_Empty.nivssdf"/>
+		<Item Name="DSF_UDP.nivssdf" Type="Document" URL="../Assets/DSF_UDP.nivssdf"/>
+		<Item Name="DSF_UDP_Loopback.dsf" Type="Document" URL="../Assets/DSF_UDP_Loopback.dsf"/>
+		<Item Name="DSF_UDP_Loopback.nivssdf" Type="Document" URL="../Assets/DSF_UDP_Loopback.nivssdf"/>
+		<Item Name="DSF_UDP_Send.dsf" Type="Document" URL="../Assets/DSF_UDP_Send.dsf"/>
+		<Item Name="DSF_UDP_Send.nivssdf" Type="Document" URL="../Assets/DSF_UDP_Send.nivssdf"/>
+		<Item Name="Empty.nivssdf" Type="Document" URL="../Assets/Empty.nivssdf"/>
 	</Item>
-	<Item Name="Add Data Sharing Framework with UDP Component.vi" Type="VI" URL="../../../Scripting Examples/Add Data Sharing Framework with UDP Component.vi"/>
-	<Item Name="Import Data Sharing Framework with UDP Component.vi" Type="VI" URL="../../../Scripting Examples/Import Data Sharing Framework with UDP Component.vi"/>
-	<Item Name="UDP - Receiver.vi" Type="VI" URL="../../../Scripting Examples/UDP - Receiver.vi"/>
+	<Item Name="Add Data Sharing Framework with UDP Component.vi" Type="VI" URL="../Add Data Sharing Framework with UDP Component.vi"/>
+	<Item Name="Import Data Sharing Framework with UDP Component.vi" Type="VI" URL="../Import Data Sharing Framework with UDP Component.vi"/>
+	<Item Name="UDP - Receiver.vi" Type="VI" URL="../UDP - Receiver.vi"/>
 </Library>
