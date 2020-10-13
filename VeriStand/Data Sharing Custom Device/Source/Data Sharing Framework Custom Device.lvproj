@@ -56,6 +56,7 @@
 			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
+			<Item Name="Copy Scripting API to Installed Location.vi" Type="VI" URL="../Utility/Copy Scripting API to Installed Location.vi"/>
 			<Item Name="LLB Pre-Build CHM Build.vi" Type="VI" URL="../Utility/LLB Pre-Build CHM Build.vi"/>
 			<Item Name="Post-Build Action.vi" Type="VI" URL="../Utility/Post-Build Action.vi"/>
 		</Item>
@@ -165,7 +166,7 @@
 				<Item Name="Convert EOLs__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Convert EOLs__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
-				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
+				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (Boolean)__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Delete Elements from 1D Array (CDB)__ogtk__jki_vi_tester.vi"/>
@@ -677,6 +678,7 @@
 							<Item Name="Async" Type="Folder">
 								<Item Name="Launch Data Viewer.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Launch Data Viewer.vi"/>
 							</Item>
+							<Item Name="Convert Data String to Display.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Convert Data String to Display.vi"/>
 							<Item Name="Data Viewer.vi" Type="VI" URL="../DSF Core.lvlibp/VIs/Data Viewer/Data Viewer.vi"/>
 							<Item Name="Edit Configuration File.vi" Type="VI" URL="../DSF Core.lvlibp/Classes/Configuration Session/Edit Configuration File.vi"/>
 						</Item>
@@ -908,7 +910,7 @@
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Scripting API</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy Scripting API to Installed Location.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{48819942-8BAA-4730-B8A0-680AC05BE54B}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -918,7 +920,7 @@
 				<Property Name="Destination[2].destName" Type="Str">Errors</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Errors</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E23DD4CB-55B0-49F4-9196-BB02378A3A35}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{79B33EAD-7D5D-453B-A179-9546C77413CC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Data Sharing Framework Custom Device Scripting.lvlib</Property>
