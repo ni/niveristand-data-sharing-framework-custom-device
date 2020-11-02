@@ -24,6 +24,11 @@
 		<Item Name="Documents" Type="Folder">
 			<Item Name="DSF-errors.txt" Type="Document" URL="../../../../Docs/DSF-errors.txt"/>
 		</Item>
+		<Item Name="InstallTo" Type="Folder">
+			<Item Name="Components" Type="Folder">
+				<Item Name="README.md" Type="Document" URL="../InstallTo/Components/README.md"/>
+			</Item>
+		</Item>
 		<Item Name="Scripting API" Type="Folder">
 			<Item Name="Data Sharing Framework Custom Device Scripting.lvlib" Type="Library" URL="../Scripting API/Data Sharing Framework Custom Device Scripting.lvlib"/>
 		</Item>
@@ -766,16 +771,20 @@
 				<Property Name="Destination[2].destName" Type="Str">DSF Configuration LLB</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Data Sharing Framework/DSF Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{17785AF8-8EBA-4F61-B7EF-DD95CC1D91DC}</Property>
+				<Property Name="Destination[3].destName" Type="Str">Components Directory</Property>
+				<Property Name="Destination[3].path" Type="Path">../Built/Custom Device/Windows/Components</Property>
+				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E9091D69-DFB4-4287-8F54-AD5CBE1F980F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Data Sharing Framework.xml</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/DSF System Explorer.lvlib/System Explorer</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/InstallTo/Components</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
@@ -798,8 +807,11 @@
 				<Property Name="Destination[2].destName" Type="Str">DSF Configuration LLB</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Custom Device/DSF Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0D378D10-960D-42D0-A583-4445C7D0F4B9}</Property>
+				<Property Name="Destination[3].destName" Type="Str">Components Directory</Property>
+				<Property Name="Destination[3].path" Type="Path">../Built/Custom Device/Windows/Components</Property>
+				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E9091D69-DFB4-4287-8F54-AD5CBE1F980F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Data Sharing Framework.xml</Property>
@@ -811,7 +823,14 @@
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/DSF System Explorer.lvlib/Dynamically Called</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/InstallTo/Components</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 			<Item Name="Engine Debug" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{C67C1B30-A649-4BB4-8780-C96741B30EB4}</Property>
@@ -828,14 +847,24 @@
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Data Sharing Framework/Windows</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EF31FD3F-4EFB-4D4B-AD83-0EC5CC3CE83E}</Property>
+				<Property Name="Destination[2].destName" Type="Str">Components Directory</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Data Sharing Framework/Windows/Components</Property>
+				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E9091D69-DFB4-4287-8F54-AD5CBE1F980F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DSF Engine.lvlib/RT Driver VI.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/InstallTo/Components</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 			<Item Name="Engine Release" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{BDB37E78-1B48-4DD8-B51B-9DFE56743A02}</Property>
@@ -852,8 +881,11 @@
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/Windows</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3A62D1B5-A36C-408F-8FE2-8674EFC13EB7}</Property>
+				<Property Name="Destination[2].destName" Type="Str">Components Directory</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Custom Device/Windows/Components</Property>
+				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E9091D69-DFB4-4287-8F54-AD5CBE1F980F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DSF Engine.lvlib/RT Driver VI.vi</Property>
@@ -866,7 +898,16 @@
 				<Property Name="Source[1].propertiesCount" Type="Int">3</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/InstallTo/Components/README.md</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/InstallTo/Components</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
 			<Item Name="Scripting API" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{C3BA9E2D-DE9C-411B-8A8F-4D7190C84592}</Property>
