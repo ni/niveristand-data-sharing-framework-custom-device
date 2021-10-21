@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="19008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -22,7 +22,6 @@
 						<Item Name="Hardware Info.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Hardware/Hardware Info/Hardware Info.lvclass"/>
 					</Item>
 					<Item Name="Interface" Type="Folder">
-						<Item Name="Data Server Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Interface/Data Server/Data Server Interface.lvclass"/>
 						<Item Name="Dispatcher Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Interface/Dispatcher/Dispatcher Interface.lvclass"/>
 						<Item Name="Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Interface/Interface.lvclass"/>
 						<Item Name="Logging Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Interface/Logging/Logging Interface.lvclass"/>
@@ -33,11 +32,6 @@
 						<Item Name="Status Pointer.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Status/Status Pointer.lvclass"/>
 						<Item Name="Timing Status Pointer.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Timing Status/Timing Status Pointer.lvclass"/>
 					</Item>
-					<Item Name="Pool" Type="Folder">
-						<Item Name="ID Pool.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Pool/ID/ID Pool.lvclass"/>
-						<Item Name="Plugin Interface Pool.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Pool/Plugin Interface/Plugin Interface Pool.lvclass"/>
-						<Item Name="Pool.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Pool/Pool.lvclass"/>
-					</Item>
 					<Item Name="State" Type="Folder">
 						<Item Name="State.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/State/State.lvclass"/>
 					</Item>
@@ -47,7 +41,6 @@
 						<Item Name="Logging Thread.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Logging/Logging Thread.lvclass"/>
 						<Item Name="Thread Manager.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread Manager/Thread Manager.lvclass"/>
 					</Item>
-					<Item Name="Component Loader.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component Loader/Component Loader.lvclass"/>
 					<Item Name="Plugin.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Plugin/Plugin.lvclass"/>
 					<Item Name="Timing.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Timing/Timing.lvclass"/>
 				</Item>
@@ -60,14 +53,6 @@
 							<Item Name="Read Buffer.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Buffer Reader/Read Buffer.vi"/>
 						</Item>
 						<Item Name="Item Tree" Type="Folder">
-							<Item Name="ID to Tree Items" Type="Folder">
-								<Item Name="Channel ID to Tree Items.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Channel ID to Tree Items.vi"/>
-								<Item Name="Group ID to Tree Items.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Group ID to Tree Items.vi"/>
-								<Item Name="Plugin ID to Tree Items.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Plugin ID to Tree Items.vi"/>
-								<Item Name="Transfer ID to Tree Items.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Transfer ID to Tree Items.vi"/>
-								<Item Name="Tree Item Type.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Tree Item Type.ctl"/>
-							</Item>
-							<Item Name="Add Buffer Channels.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Buffer Channels.vi"/>
 							<Item Name="Add Buffer Data to Variant.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Buffer Data to Variant.vi"/>
 							<Item Name="Add Item to Tree.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Item to Tree.vi"/>
 							<Item Name="Add Item with Setting.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Add Item with Setting.vi"/>
@@ -85,10 +70,10 @@
 							<Item Name="Get Buffer Data from Variant.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Get Buffer Data from Variant.vi"/>
 							<Item Name="Get Item Display Name.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Get Item Display Name.vi"/>
 							<Item Name="Get Item Type.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Get Item Type.vi"/>
-							<Item Name="Is Item Preloaded" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Is Item Preloaded"/>
+							<Item Name="Is Item Preloaded.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Is Item Preloaded.vi"/>
 							<Item Name="Load All Subitems.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Load All Subitems.vi"/>
-							<Item Name="Load Subitems.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Load Subitems.vi"/>
 							<Item Name="Select First Item.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Select First Item.vi"/>
+							<Item Name="Tree Item Type.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/ID to Tree Items/Tree Item Type.ctl"/>
 							<Item Name="Tree Item.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Source/Item Tree/Tree Item.ctl"/>
 						</Item>
 						<Item Name="Main VI" Type="Folder">
@@ -119,28 +104,83 @@
 						</Item>
 					</Item>
 					<Item Name="Base 10 Digit Count.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Base 10 Digit Count.vi"/>
+					<Item Name="DSF Version.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/DSF Version.vi"/>
+					<Item Name="Find Component Configuration.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Find Component Configuration.vi"/>
+					<Item Name="Internal Components.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Framework/Internal Components.vi"/>
+					<Item Name="Verison Cluster to String.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Verison Cluster to String.vi"/>
 					<Item Name="VI Name.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/VI Name.vi"/>
 				</Item>
 			</Item>
 			<Item Name="Public" Type="Folder">
 				<Item Name="Classes" Type="Folder">
-					<Item Name="Components" Type="Folder">
-						<Item Name="Impementations" Type="Folder">
-							<Item Name="Buffer Converters" Type="Folder">
-								<Item Name="DSF Type Converter.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/DSF Type Converter.lvclass"/>
-							</Item>
+					<Item Name="Component" Type="Folder">
+						<Item Name="Core" Type="Folder">
+							<Item Name="Core Component Configurations.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component Configuration/Core/Core Component Configurations.lvclass"/>
+							<Item Name="Core Component User Interfaces.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component User Interface/Core/Core Component User Interfaces.lvclass"/>
+							<Item Name="Core Component.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component/Core/Core Component.lvclass"/>
 						</Item>
-						<Item Name="Buffer Converter.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Buffer Converter/Buffer Converter.lvclass"/>
-						<Item Name="Transceiver.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Transceiver/Transceiver.lvclass"/>
+						<Item Name="Default Buffer Converter" Type="Folder">
+							<Item Name="Default Buffer Converter Component.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component/Default Buffer Converter/Default Buffer Converter Component.lvclass"/>
+							<Item Name="Default Buffer Converter Configurations.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/Configurations/Default Buffer Converter Configurations.lvclass"/>
+							<Item Name="Default Buffer Converter User Interfaces.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/User Interfaces/Default Buffer Converter User Interfaces.lvclass"/>
+						</Item>
+						<Item Name="Component Configurations.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component Configuration/Component Configurations.lvclass"/>
+						<Item Name="Component User Interfaces.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component User Interface/Component User Interfaces.lvclass"/>
+						<Item Name="Component.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component/Component.lvclass"/>
+					</Item>
+					<Item Name="Configuration" Type="Folder">
+						<Item Name="Core" Type="Folder">
+							<Item Name="Types" Type="Folder">
+								<Item Name="Channel Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Channel/Channel Configuration.lvclass"/>
+								<Item Name="Framework Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Framework/Framework Configuration.lvclass"/>
+								<Item Name="Group Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Group/Group Configuration.lvclass"/>
+								<Item Name="Plugin Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Plugin/Plugin Configuration.lvclass"/>
+								<Item Name="Thread Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Thread/Thread Configuration.lvclass"/>
+								<Item Name="Transfer Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Transfer/Transfer Configuration.lvclass"/>
+							</Item>
+							<Item Name="Core Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Core/Core Configuration.lvclass"/>
+						</Item>
+						<Item Name="Default Buffer Converter" Type="Folder">
+							<Item Name="Default Buffer Converter Transfer Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/Configurations/Default Buffer Converter Transfer Configuration.lvclass"/>
+						</Item>
+						<Item Name="Configuration.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Configuration.lvclass"/>
 					</Item>
 					<Item Name="Thread" Type="Folder">
-						<Item Name="Plugin Thread.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Plugin/Plugin Thread.lvclass"/>
+						<Item Name="Plugin" Type="Folder">
+							<Item Name="Transceiver" Type="Folder">
+								<Item Name="Default Buffer Converter" Type="Folder">
+									<Item Name="Default Buffer Converter.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/Default Buffer Converter.lvclass"/>
+								</Item>
+								<Item Name="Buffer Converter.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Buffer Converter/Buffer Converter.lvclass"/>
+								<Item Name="Transceiver Thread.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Plugin/Transceiver/Transceiver Thread.lvclass"/>
+								<Item Name="Transceiver.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Transceiver/Transceiver.lvclass"/>
+							</Item>
+							<Item Name="Plugin Thread.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Plugin/Plugin Thread.lvclass"/>
+						</Item>
 						<Item Name="Thread.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Thread.lvclass"/>
-						<Item Name="Transceiver Thread.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Plugin/Transceiver/Transceiver Thread.lvclass"/>
+					</Item>
+					<Item Name="User Interface" Type="Folder">
+						<Item Name="Core" Type="Folder">
+							<Item Name="Core Channel User Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/Core/Channel/Core Channel User Interface.lvclass"/>
+							<Item Name="Core Group User Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/Core/Group/Core Group User Interface.lvclass"/>
+							<Item Name="Core Plugin User Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/Core/Plugin/Core Plugin User Interface.lvclass"/>
+							<Item Name="Core Thread User Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/Core/Thread/Core Thread User Interface.lvclass"/>
+							<Item Name="Core Transfer User Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/Core/Transfer/Core Transfer User Interface.lvclass"/>
+						</Item>
+						<Item Name="Default Buffer Converter" Type="Folder">
+							<Item Name="Default Buffer Converter Transfers UI.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Components/Buffer Converters/DSF Type Converter/User Interfaces/Transfer/Default Buffer Converter Transfers UI.lvclass"/>
+						</Item>
+						<Item Name="Editors" Type="Folder">
+							<Item Name="Component Settings Editor.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/Editors/Component/Component Settings Editor.lvclass"/>
+						</Item>
+						<Item Name="User Interface Events.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface Events/User Interface Events.lvclass"/>
+						<Item Name="User Interface Handler.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface Handler/User Interface Handler.lvclass"/>
+						<Item Name="User Interface.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/User Interface/User Interface.lvclass"/>
 					</Item>
 					<Item Name="Buffer.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Buffer/Buffer.lvclass"/>
 					<Item Name="Buffers.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Buffers/Buffers.lvclass"/>
-					<Item Name="Configuration Session.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Configuration Session.lvclass"/>
+					<Item Name="Component Loader.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Component Loader/Component Loader.lvclass"/>
+					<Item Name="Configuration Session.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration Session/Configuration Session.lvclass"/>
 					<Item Name="Framework Status.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Framework Status/Framework Status.lvclass"/>
 					<Item Name="Framework.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Framework/Framework.lvclass"/>
 					<Item Name="Performance.lvclass" Type="LVClass" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Performance/Performance.lvclass"/>
@@ -161,7 +201,9 @@
 					<Item Name="DSF Byte Order.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Byte Order.ctl"/>
 					<Item Name="DSF Channel Buffer Descriptor.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Channel Buffer Descriptor.ctl"/>
 					<Item Name="DSF Channel Info.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Channel Info.ctl"/>
+					<Item Name="DSF Component Configuration.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Component Configuration.ctl"/>
 					<Item Name="DSF Configuration Errors.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Configuration Errors.ctl"/>
+					<Item Name="DSF Configuration ID.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Configuration ID.ctl"/>
 					<Item Name="DSF Data Type.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Data Type.ctl"/>
 					<Item Name="DSF Direction.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Direction.ctl"/>
 					<Item Name="DSF Group Info.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Group Info.ctl"/>
@@ -175,19 +217,23 @@
 					<Item Name="DSF Version Info.ctl" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Typedefs/DSF Version Info.ctl"/>
 				</Item>
 				<Item Name="VIs" Type="Folder">
+					<Item Name="Components" Type="Folder">
+						<Item Name="Add Component Configuration.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Add Component Configuration.vi"/>
+						<Item Name="Add Component Default Settings.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Add Component Default Settings.vi"/>
+					</Item>
 					<Item Name="Utilities" Type="Folder">
 						<Item Name="Async" Type="Folder">
 							<Item Name="Launch Data Viewer.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Launch Data Viewer.vi"/>
 						</Item>
+						<Item Name="Convert Data String to Display.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Convert Data String to Display.vi"/>
 						<Item Name="Data Viewer.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/Data Viewer/Data Viewer.vi"/>
-						<Item Name="Edit Configuration File.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Edit Configuration File.vi"/>
+						<Item Name="Edit Configuration File.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration Session/Edit Configuration File.vi"/>
 					</Item>
 					<Item Name="Viewer API" Type="Folder">
 						<Item Name="Connect to Data Server.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Data Server/Connect to Data Server.vi"/>
 						<Item Name="Read Buffer Data from Server.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Data Server/Read Buffer Data from Server.vi"/>
 						<Item Name="Request Buffer from Server.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Thread/Data Server/Request Buffer from Server.vi"/>
 					</Item>
-					<Item Name="DSF Version.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/VIs/DSF Version.vi"/>
 				</Item>
 			</Item>
 			<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/1abvi3w/vi.lib/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
@@ -305,6 +351,10 @@
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Get Group Transfers.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Get Group Transfers.vi"/>
+			<Item Name="Get Plugin Groups.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Get Plugin Groups.vi"/>
+			<Item Name="Get Plugins.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Get Plugins.vi"/>
+			<Item Name="Get Transfer Channels.vi" Type="VI" URL="../../../VeriStand/Data Sharing Custom Device/Source/DSF Core.lvlibp/Classes/Configuration/Get Transfer Channels.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
