@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -13,7 +13,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Build" Type="Folder">
 			<Item Name="Build Automation.lvlib" Type="Library" URL="../../Development Tools/Build Automation/Build Automation.lvlib"/>
-			<Item Name="Post-Build Action.vi" Type="VI" URL="../Build/Post-Build Action.vi"/>
 			<Item Name="Pre-Build Action Debug.vi" Type="VI" URL="../Build/Pre-Build Action Debug.vi"/>
 			<Item Name="Pre-Build Action.vi" Type="VI" URL="../Build/Pre-Build Action.vi"/>
 		</Item>
