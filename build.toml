@@ -7,10 +7,10 @@ libraries = ['Source\Built\Core\{target}\DSF Core.lvlibp']
 copy_location = 'Includes'
 
 [projects.Core_windows]
-path = 'Core\Data Sharing Framework Core Build - Windows.lvproj'
+path = 'Source\Core\Data Sharing Framework Core Build - Windows.lvproj'
 
 [projects.Core_linux_x64]
-path = 'Core\Data Sharing Framework Core Build - Linux RT.lvproj'
+path = 'source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
 
 [projects.CD_windows]
 path = 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
