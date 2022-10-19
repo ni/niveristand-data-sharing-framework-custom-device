@@ -916,7 +916,7 @@
 				<Property Name="Destination[2].destName" Type="Str">Errors</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Errors</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{562A08A5-CA1E-4DE4-8124-2D7ED8108ABA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EBA6D1CE-4CE0-47B5-B062-89A527CA7BBF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Scripting API/Data Sharing Framework Custom Device Scripting.lvlib</Property>
@@ -941,7 +941,7 @@
 				<Property Name="Source[5].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Library</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Documents/DSF-errors.txt</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
