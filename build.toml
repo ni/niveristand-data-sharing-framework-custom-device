@@ -19,7 +19,7 @@ path = 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
 path = 'Source\Custom Device\Data Sharing Framework Custom Device Linux RT x64.lvproj'
 
 [projects.ScriptingExamples_windows]
-path = 'Source\Custom Device\Scripting Examples\Data Sharing Framework Scripting.lvproj'
+path = 'Source\Scripting Examples\Data Sharing Framework Scripting.lvproj'
 
 [[build.steps]]
 name = 'Data Sharing Framework Core - Windows'
