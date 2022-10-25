@@ -1,25 +1,25 @@
 [archive]
-build_output_dir = 'Built'
+build_output_dir = 'Source\Built'
 archive_location = '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
 
 [dependencies.local]
-libraries = ['Built\Core\{target}\DSF Core.lvlibp']
-copy_location = 'VeriStand\Data Sharing Custom Device\Source'
+libraries = ['Source\Built\Core\{target}\DSF Core.lvlibp']
+copy_location = 'Includes'
 
 [projects.Core_windows]
-path = 'Core\Data Sharing Framework Core Build - Windows.lvproj'
+path = 'Source\Core\Data Sharing Framework Core Build - Windows.lvproj'
 
 [projects.Core_linux_x64]
-path = 'Core\Data Sharing Framework Core Build - Linux RT.lvproj'
+path = 'source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
 
 [projects.CD_windows]
-path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device.lvproj'
+path = 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
 
 [projects.CD_linuxRT_x64]
-path = 'VeriStand\Data Sharing Custom Device\Source\Data Sharing Framework Custom Device Linux RT x64.lvproj'
+path = 'Source\Custom Device\Data Sharing Framework Custom Device Linux RT x64.lvproj'
 
 [projects.ScriptingExamples_windows]
-path = 'VeriStand\Data Sharing Custom Device\Source\Scripting Examples\Data Sharing Framework Scripting.lvproj'
+path = 'Source\Scripting Examples\Data Sharing Framework Scripting.lvproj'
 
 [[build.steps]]
 name = 'Data Sharing Framework Core - Windows'
@@ -78,25 +78,25 @@ dependency_target = 'Linux_x64'
 [[package]]
 type = 'nipkg'
 control_file = 'control_dsf_cd'
-package_output_dir = 'Built'
+package_output_dir = 'Source\Built'
 
 [package.payload_map]
-'Built\\Custom Device' = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\Data Sharing Framework'
-'Built\\Errors' = 'ni-paths-NISHAREDDIR{nipaths_64_bitness_suffix}\Errors\English'
+'Source\\Built\\Custom Device' = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices\Data Sharing Framework'
+'Source\\Built\\Errors' = 'ni-paths-NISHAREDDIR{nipaths_64_bitness_suffix}\Errors\English'
 
 [[package]]
 type = 'nipkg'
-payload_dir = 'Built\Scripting API'
+payload_dir = 'Source\Built\Scripting API'
 install_destination = 'ni-paths-LV{veristand_version}DIR{nipaths_64_bitness_suffix}\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
 control_file = 'control_dsf_scripting'
-package_output_dir = 'Built'
+package_output_dir = 'Source\Built'
 
 [[package]]
 type = 'nipkg'
-payload_dir = 'Built\Scripting Examples'
+payload_dir = 'Source\Built\Scripting Examples'
 install_destination = 'ni-paths-LV{veristand_version}DIR{nipaths_64_bitness_suffix}\examples\NI VeriStand Custom Devices\Data Sharing Framework'
 control_file = 'control_dsf_examples'
-package_output_dir = 'Built'
+package_output_dir = 'Source\Built'
 
 [notification]
 type = 'teams'
