@@ -21,7 +21,7 @@ Transfers represent a single block of channel data to be transmitted or received
 
 ### Transfer Group
 
-Transfer Groups contain a group of Transfers that should be executed with the same timing (decimation and offset with respect to the owning plugin's timing). All transfers in a given transfer group must be all configured to TX or all configured to RX. Please refer to the [transfer group timing](#cycle-timing) section below for important information on how to properly configure transfer groups.
+Transfer Groups contain a group of Transfers that should be executed with the same timing (decimation and offset with respect to the owning plugin's timing). Transfers in a given transfer group must be configured to all TX or all RX. Please refer to the [transfer group timing](#cycle-timing) section below for important information on how to properly configure transfer groups.
 
 ### Thread
 
