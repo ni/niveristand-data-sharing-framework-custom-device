@@ -16,7 +16,7 @@ Corresponds directly to a VeriStand data channel under the Data Sharing Framewor
 
 Transfers represent a single block of channel data to be transmitted or received by the Framework. Each Transfer is comprised of three buffers containing channel data intended to be sent as a part of this transfer:
 
-- The engine buffers (both inline and async) store the data according to each channel's engine data type, and requires all channels be in a contiguous block.
+- The engine buffers (both inline and async) store the data according to each channel's engine data type, and require all channels be in a contiguous block.
 - The string buffer stores the data according to each channel's string data type and does not require all channels to be in a contiguous block, as it uses an offset value to allow channels to be placed anywhere in the buffer
 
 ### Transfer Group
