@@ -21,6 +21,10 @@ path = 'Source\Custom Device\Data Sharing Framework Custom Device Linux RT x64.l
 [projects.ScriptingExamples_windows]
 path = 'Source\Scripting Examples\Data Sharing Framework Scripting.lvproj'
 
+[[codegen.steps]]
+name = 'Clear Compile Cache'
+type = 'lvClearCache'
+
 [[build.steps]]
 name = 'Data Sharing Framework Core - Windows'
 type = 'lvBuildSpec'
