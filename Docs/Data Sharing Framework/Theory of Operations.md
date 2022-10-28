@@ -6,27 +6,31 @@ The Data Sharing Framework is a plugin-based architecture that schedules the tra
 Structure
 ---------
 
-The Framework is structured to be a series of increasing forms of data encapsulation, starting with individual Channels up to the Plugins that will interact with them.
+The Framework is structured to be a series of increasing forms of data encapsulation, starting with individual Channels up to the Plugins that will interact with them. See below for a brief description of each level of encapsulation.
 
 ### Channel
 
-An individual channel located within a Buffer. In VeriStand, this corresponds directly to a data channel in a custom device.
+Corresponds directly to a VeriStand data channel under the Data Sharing Framework custom device. Within the custom device, this is represented as an individual channel within a Buffer. 
 
 ### Transfer
 
-Transfers represents a single block of channel data to be transmitted or received by the Framework. It is comprised of three buffers, and each of these buffers represent channel data intended to be sent as a part of this transfer. The engine buffers (both inline and async) store the data according to each channels? engine data type, and the string buffer according to each channel's string data type. The engine buffer requires all channels be contiguous, but the string buffer uses an offset value to allow channels to be placed anywhere in the buffer, even if there are gaps between channels.
+Transfers represent a single block of channel data to be transmitted or received by the Framework. Each Transfer is comprised of three buffers containing channel data intended to be sent as a part of this transfer:
+
+- The engine buffers (both inline and async) store the data according to each channel's engine data type, and require all channels be in a contiguous block.
+- The string buffer stores the data according to each channel's string data type and does not require all channels to be in a contiguous block, as it uses an offset value to allow channels to be placed anywhere in the buffer
 
 ### Transfer Group
 
-Transfer Groups group together an array of Transfers that should be executed with the same timing (decimation and offset) values, while adding information on the direction (Tx or Rx) of the transfers.
+Transfer Groups contain a group of Transfers that should be executed with the same timing (decimation and offset with respect to the owning plugin's timing). Transfers in a given transfer group must be configured to all TX or all RX. Please refer to the [transfer group timing](#cycle-timing) section below for important information on how to properly configure transfer groups.
 
 ### Thread
 
-A thread executes different Transfer Groups for a given Plugin.
+Contains the configuration for all transfer groups intended to run on a single CPU thread. The thread is responsible for executing the transfer groups that belong to it.
 
 ### Plugin
 
-A Plugin can be single or multi-threaded based on its configuration and defines how its threads execute.
+Contains one or multiple threads and defines how the threads execute. Plugins also have timing settings to control when and how often each plugin will execute with respect to the PCL. (Priority, Decimation, Offset)
+
 
 Memory Management
 -----------------
@@ -282,11 +286,11 @@ An array of string key/value pairs for providing custom settings at the Transfer
 
 #### Cycle Timing
 
-- **Priority** - A number used to order the execution of Transfer Groups that have the same decimation and offset values.
-- **Decimation** - The number of cycles, relative to the Plugin cycle count, to skip between active cycles.
-- **Offset** - An offset, from 0 to N-1 (where N is decimation), for offsetting the execution of similarly decimated Groups to allow them to execute on different cycles from one another.
+- **Priority** - A number used to order the execution of Transfer Groups that have the same decimation and offset values. Transfer groups with higher priority values will execute first.
+- **Decimation** - The ratio between the number of active plugin cycles to active transfer group cycles. (e.g. if decimation is set to 5, then the transfer group will execute every fifth active plugin cycle.)
+- **Offset** - An offset, from 0 to N-1 (where N is decimation), for offsetting the execution of similarly decimated Groups to allow them to execute on different cycles from one another. A transfer group will be active in a given plugin cycle when [Plugin cycle] % [Decimation] = offset.
 
-**Note**: Transfer Group cycle timing happens relative to its parent Plugin's cycle count. Decimation here will stack on top of the Plugin's configured decimation.
+**Note**: Transfer Group cycle timing happens relative to its parent Plugin's cycle count. Decimation here will stack on top of the Plugin's configured decimation. Transfer groups are also forced to run inline with the PCL if they belong to a plugin configured to run inline to the PCL and are forced to run asynchronously if they belong to a plugin that is configured to run asynchronously. 
 
 #### Direction
 
@@ -319,9 +323,9 @@ A string array of names of components this Plugin should use to initialize its r
 
 #### Cycle Timing
 
-- **Priority** - Used as the base priority for all threads created by this Plugin instance. Individual threads can offset their priority relative to this number.
-- **Decimation** - The number of cycles, relative to the Framework cycle count, to skip between active cycles.
-- **Offset** - An offset, from 0 to N-1 (where N is decimation), for offsetting the execution of similarly decimated Plugins to allow them to execute on different cycles from one another.
+- **Priority** - Used as the base priority for all threads created by this Plugin instance. Threads with higher priority will execute first when applicable.
+- **Decimation** - The ratio between the number of active framework cycles to active plugin cycles. (e.g. if decimation is set to 5, then the plugin will execute every fifth framework cycle.)
+- **Offset** - An offset, from 0 to N-1 (where N is decimation), for offsetting the execution of similarly decimated plugins to allow them to execute on different cycles from one another. A plugin will be active in a given framework cycle when [Framework cycle] % [Decimation] = offset.
 
 #### Threads
 
