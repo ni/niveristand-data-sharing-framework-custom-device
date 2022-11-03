@@ -81,6 +81,7 @@
 		<Item Name="Apply DSF Configuration.vi" Type="VI" URL="../Apply DSF Configuration.vi"/>
 		<Item Name="Base 10 Digit Count.vi" Type="VI" URL="../Base 10 Digit Count.vi"/>
 		<Item Name="Check Component Settings Change.vi" Type="VI" URL="../Check Component Settings Change.vi"/>
+		<Item Name="Check Configuration.vi" Type="VI" URL="../Check Configuration.vi"/>
 		<Item Name="Collect Components UI.vi" Type="VI" URL="../Collect Components UI.vi"/>
 		<Item Name="Delete All Children.vi" Type="VI" URL="../Delete All Children.vi"/>
 		<Item Name="Find Available Files.vi" Type="VI" URL="../Find Available Files.vi"/>
