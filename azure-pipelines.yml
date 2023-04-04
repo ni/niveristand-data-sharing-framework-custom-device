@@ -25,14 +25,10 @@ stages:
           bitness: '64bit'
 
       buildSteps:
+          # Windows build steps should all follow this build step, since it builds an important dependency
         - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Windows.lvproj'
           buildOperation: 'ExecuteBuildSpec'
           target: 'My Computer'
-          buildSpec: 'Data Sharing Framework Core'
-
-        - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'Linux RT x64'
           buildSpec: 'Data Sharing Framework Core'
 
         - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
@@ -54,8 +50,14 @@ stages:
           buildOperation: 'ExecuteBuildSpec'
           target: 'My Computer'
           buildSpec: 'Engine Release'
-
+          
+          # Linux x64 build steps should all follow this build step, since it builds an important dependency
         - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
+          buildOperation: 'ExecuteBuildSpec'
+          target: 'Linux RT x64'
+          buildSpec: 'Data Sharing Framework Core'
+
+        - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device Linux RT x64.lvproj'
           buildOperation: 'ExecuteBuildSpec'
           target: 'Linux RT x64'
           buildSpec: 'Engine Release'
@@ -75,7 +77,7 @@ stages:
         - controlFileName: 'control_dsf_scripting'
           payloadMaps:
             - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
-              payloadLocation: 'Source\Built\Custom Device'
+              payloadLocation: 'Source\Built\Scripting API'
 
         - controlFileName: 'control_dsf_examples'
           payloadMaps:
