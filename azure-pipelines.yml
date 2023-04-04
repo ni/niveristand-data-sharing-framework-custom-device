@@ -24,9 +24,6 @@ stages:
         - version: '2023'
           bitness: '64bit'
 
-      dependencies:
-        # NOT READY YET
-
       buildSteps:
         - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Windows.lvproj'
           buildOperation: 'ExecuteBuildSpec'
