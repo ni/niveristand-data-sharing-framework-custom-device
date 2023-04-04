@@ -50,7 +50,7 @@ stages:
           buildOperation: 'ExecuteBuildSpec'
           target: 'My Computer'
           buildSpec: 'Engine Release'
-          
+
           # Linux x64 build steps should all follow this build step, since it builds an important dependency
         - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
           buildOperation: 'ExecuteBuildSpec'
@@ -62,7 +62,7 @@ stages:
           target: 'Linux RT x64'
           buildSpec: 'Engine Release'
 
-      releaseVersion: '23.3.0'
+      releaseVersion: '23.5.0'
       buildOutputLocation: 'Source\Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
 
