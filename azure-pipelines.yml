@@ -32,7 +32,7 @@ stages:
 
         - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
           buildOperation: 'ExecuteBuildSpec'
-          target: 'Linux x64'
+          target: 'Linux RT x64'
           buildSpec: 'Data Sharing Framework Core'
 
         - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
@@ -57,7 +57,7 @@ stages:
 
         - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
           buildOperation: 'ExecuteBuildSpec'
-          target: 'Linux x64'
+          target: 'Linux RT x64'
           buildSpec: 'Engine Release'
 
       releaseVersion: '23.3.0'
