@@ -13,11 +13,13 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Build" Type="Folder">
 			<Item Name="Build Automation.lvlib" Type="Library" URL="../../Development Tools/Build Automation/Build Automation.lvlib"/>
+			<Item Name="Copy PPLs to Includes.vi" Type="VI" URL="../Build/Copy PPLs to Includes.vi"/>
 			<Item Name="Pre-Build Action (Linux RT).vi" Type="VI" URL="../Build/Pre-Build Action (Linux RT).vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
@@ -131,6 +133,7 @@
 				<Property Name="Bld_buildSpecName" Type="Str">Data Sharing Framework Core</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build/Copy PPLs to Includes.vi</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Build/Pre-Build Action (Linux RT).vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{559B0C74-4592-419C-B7EF-D9723B7D9E8B}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">../Built/Core/Linux_x64</Property>
@@ -146,7 +149,7 @@
 				<Property Name="Destination[1].path" Type="Path">../Built/Core/Linux_x64/Support</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1FF87849-8A22-4175-B3EE-085D5AF03211}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2DBF225D-FE7C-4337-ABE1-76C10F7C2F8C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux RT x64/DSF Core.lvlib</Property>
