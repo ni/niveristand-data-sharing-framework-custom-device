@@ -70,16 +70,16 @@ stages:
         - controlFileName: 'control_dsf_cd'
           payloadMaps:
             - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\Data Sharing Framework'
-              payloadLocation: 'Source\Built\Custom Device'
+              payloadLocation: 'Custom Device'
             - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\Errors\English'
-              payloadLocation: 'Source\Built\Errors'
+              payloadLocation: 'Errors'
 
         - controlFileName: 'control_dsf_scripting'
           payloadMaps:
             - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
-              payloadLocation: 'Source\Built\Scripting API'
+              payloadLocation: 'Scripting API'
 
         - controlFileName: 'control_dsf_examples'
           payloadMaps:
             - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\Data Sharing Framework'
-              payloadLocation: 'Source\Built\Scripting Examples'
+              payloadLocation: 'Scripting Examples'
