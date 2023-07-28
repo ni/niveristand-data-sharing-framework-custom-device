@@ -55,7 +55,7 @@ The async engine buffer. This buffer is a copy of the inline buffer for use with
 
 ### String Buffer
 
-The string buffer. This buffer is used to store a converted form of the engine buffer channels for transfer. A Buffer Converter implementation builds and parses this buffer.
+The string buffer. This buffer is used to store a converted form of the engine buffer channels for transfer. A Buffer Converter implementation builds and parses this buffer. To utilize the Buffer Converter, a [Buffer Converter Component](#default-buffer-converter) must be added to the plugin configuration.
 
 Multithreading
 --------------
@@ -66,7 +66,7 @@ The Framework provides a base Thread class, which all other Thread classes inher
 
 #### Execution
 
-When a thread is launched, it executes within a Time Sequence Structure which contains the top-level state machine. This allows threads to be run on certain CPU cores and at specific priorities.
+When a thread is launched, it executes within a Timed Sequence Structure which contains the top-level state machine. This allows threads to be run on certain CPU cores and at specific priorities.
 
 ![](support/image027.png)
 
@@ -75,7 +75,7 @@ When a thread is launched, it executes within a Time Sequence Structure which co
 ##### States
 
 1. **Idle** - The thread is idle and ready to be transitioned to the Run state.
-2. **Run** - The thread begins running, which calls the thread-s Main dynamic dispatch method (shown below).
+2. **Run** - The thread begins running, which calls the thread\'s Main dynamic dispatch method (shown below).
 3. **Error** - If the thread returns an error from the Run state, it enters this state and waits to be reset.
 4. **Shutdown** - The state when the thread exits the top-level state machine and closes.
 
@@ -106,7 +106,7 @@ There are multiple asynchronous threads created by the Framework.
 This thread is used to receive state changes from the inline thread and then forward them to the correct Plugin thread. This thread allows the inline thread to queue up work quickly to a single work FIFO without having to wait on the process of dispatching the work directly.
 
 - **Priority**: 55000
-- **Processor**: -2
+- **Processor**: -2 (Automatically assigned)
 
 #### Plugin Threads
 
@@ -117,14 +117,14 @@ The Plugin Thread class provides methods for receiving and responding to Framewo
 
 #### Data Server Thread
 
-The Framework provides a Data Viewer which can be used to view the memory contents of any Buffer within the Framework. The Data Server threads is the thread that serves up direct memory reads of the Buffers within the Framework.
+The Framework provides a Data Viewer which can be used to view the memory contents of any Buffer within the Framework. The Data Server thread is the thread that serves up direct memory reads of the Buffers within the Framework.
 
 - **Priority**: 100
 - **Processor**: -2
 
 #### Logging Thread
 
-A thread used for capturing errors from other asynchronous threads and logging them to a log file. See [Error Log](#_Error_Log).
+A thread used for capturing errors from other asynchronous threads and logging them to a log file.
 
 - **Priority**: 50
 - **Processor**: -2
@@ -138,6 +138,31 @@ Components
 Plugins for the Framework can load one or more Components from disk to initialize its runtime functionality. A component is an individual Packed Project Library that provides one or more overridden implementations of the classes provided by the Framework.
 
 ![](support/image026.png)
+
+### Internal Components
+
+#### Default Buffer Converter
+
+The Default Buffer Converter Component is exported in the DSF Core library and can be used as the [Buffer Converter](#buffer-converter) for data conversion between the engine buffers and the string buffer. This component must be added to the [Plugin configuration](#components-1) for data conversion to happen. An example of the configured json is below.
+
+```
+"configuration": {
+    "plugins": [
+        {
+        "core": {
+            "name": "Test Plugin",
+            "components": [
+                "UDP",
+                "Default Buffer Converter"
+            ],
+            "cycle timing": {
+                "priority": 10000,
+                "decimation": 1,
+                "offset": 0
+            }
+        }...
+}
+```
 
 ### Component Overriding
 
@@ -287,7 +312,7 @@ An array of string key/value pairs for providing custom settings at the Transfer
 #### Cycle Timing
 
 - **Priority** - A number used to order the execution of Transfer Groups that have the same decimation and offset values. Transfer groups with higher priority values will execute first.
-- **Decimation** - The ratio between the number of active plugin cycles to active transfer group cycles. (e.g. if decimation is set to 5, then the transfer group will execute every fifth active plugin cycle.)
+- **Decimation** - The ratio between the number of active plugin cycles to active transfer group cycles. (e.g. if decimation is set to 5, then the transfer group will execute every fifth active plugin cycle.) A decimation of 0 will cause the transfer to happen inline with the Framework and the active engine buffer will be the [Inline Buffer](#inline-buffer). Any other decimation will make the transfer asynchronous and the active buffer will be the [Async Buffer](#async-buffer).
 - **Offset** - An offset, from 0 to N-1 (where N is decimation), for offsetting the execution of similarly decimated Groups to allow them to execute on different cycles from one another. A transfer group will be active in a given plugin cycle when [Plugin cycle] % [Decimation] = offset.
 
 **Note**: Transfer Group cycle timing happens relative to its parent Plugin's cycle count. Decimation here will stack on top of the Plugin's configured decimation. Transfer groups are also forced to run inline with the PCL if they belong to a plugin configured to run inline to the PCL and are forced to run asynchronously if they belong to a plugin that is configured to run asynchronously. 
