@@ -176,7 +176,7 @@ The Default Buffer Converter can be configured to convert based on a byte order 
     ]
 ```
 
-![](support/image030.png)
+![](support/defaultbufferconfig.png)
 
 ### Component Overriding
 
