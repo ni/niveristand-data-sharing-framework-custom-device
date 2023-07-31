@@ -106,7 +106,7 @@ There are multiple asynchronous threads created by the Framework.
 This thread is used to receive state changes from the inline thread and then forward them to the correct Plugin thread. This thread allows the inline thread to queue up work quickly to a single work FIFO without having to wait on the process of dispatching the work directly.
 
 - **Priority**: 55000
-- **Processor**: -2 (Automatically assigned)
+- **Processor**: -2 (automatically assigned)
 
 #### Plugin Threads
 
@@ -163,6 +163,20 @@ The Default Buffer Converter Component is exported in the DSF Core library and c
         }...
 }
 ```
+
+The Default Buffer Converter can be configured to convert based on a byte order per transfer using the `byte-order` key. An example json configuration and configuration in the VeriStand custom device are shown below.
+
+```
+"component": "Default Buffer Converter",
+    "values": [
+        {
+            "key": "byte order",
+            "value": "little-endian"
+        }
+    ]
+```
+
+![](support/image030.png)
 
 ### Component Overriding
 
