@@ -757,7 +757,7 @@
 				<Property Name="Destination[3].path" Type="Path">../Built/Custom Device/Windows/Components</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[4].destName" Type="Str">Page Help</Property>
-				<Property Name="Destination[4].path" Type="Path">../Built/Custom Device/Windows/Page Help</Property>
+				<Property Name="Destination[4].path" Type="Path">../Built/Custom Device/Page Help</Property>
 				<Property Name="Destination[4].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">5</Property>
 				<Property Name="Source[0].itemID" Type="Str">{C5BA0AFC-42A3-4E49-885B-D672FA444EA4}</Property>
@@ -802,7 +802,7 @@
 				<Property Name="Destination[3].path" Type="Path">../Built/Custom Device/Windows/Components</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[4].destName" Type="Str">Page Help</Property>
-				<Property Name="Destination[4].path" Type="Path">../Built/Custom Device/Windows/Page Help</Property>
+				<Property Name="Destination[4].path" Type="Path">../Built/Custom Device/Page Help</Property>
 				<Property Name="Destination[4].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">5</Property>
 				<Property Name="Source[0].itemID" Type="Str">{C5BA0AFC-42A3-4E49-885B-D672FA444EA4}</Property>
