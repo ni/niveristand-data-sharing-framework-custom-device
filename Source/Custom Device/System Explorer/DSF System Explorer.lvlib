@@ -89,6 +89,7 @@
 		<Item Name="Initialize Components UI.vi" Type="VI" URL="../Initialize Components UI.vi"/>
 		<Item Name="Load Components.vi" Type="VI" URL="../Load Components.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../Load Help File.vi"/>
+		<Item Name="Move Away from Framework and Back.vi" Type="VI" URL="../Move Away from Framework and Back.vi"/>
 		<Item Name="NI VeriStand - Commit System Explorer Update Buffer Wrapper.vi" Type="VI" URL="../NI VeriStand - Commit System Explorer Update Buffer Wrapper.vi"/>
 		<Item Name="NI VeriStand - Enable System Explorer Update Buffer Wrapper.vi" Type="VI" URL="../NI VeriStand - Enable System Explorer Update Buffer Wrapper.vi"/>
 		<Item Name="prompt user for configuration.vi" Type="VI" URL="../prompt user for configuration.vi"/>
