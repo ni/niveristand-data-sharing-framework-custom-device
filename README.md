@@ -11,18 +11,18 @@ The Data Sharing Framework repository provides a plugin-based approach to reflec
 
 ## LabVIEW Source Code Version
 
-LabVIEW 2020
+LabVIEW 2021
 
 ## Dependencies
 
 ### Running the custom device
 
-- [VeriStand 2020 or later](https://www.ni.com/en-us/support/downloads/software-products/download.veristand.html)
+- [VeriStand 2021 or later](https://www.ni.com/en-us/support/downloads/software-products/download.veristand.html)
 - [Data Sharing Framework Custom Device Plugins](https://github.com/ni/niveristand-data-sharing-framework-custom-device-plugins/releases)
 
 ### Developing or building from source 
 
-- [LabVIEW 2020 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
+- [LabVIEW 2021 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
 - [LabVIEW Real-Time Module](https://www.ni.com/en-us/support/downloads/software-products/download.labview-real-time-module.html)
 - [VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-development-tools/releases)
