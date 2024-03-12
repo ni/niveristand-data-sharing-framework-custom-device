@@ -20,5 +20,6 @@ XB-DisplayName-de: NI Data Sharing Framework - LabVIEW-Beispiele für VeriStand 
 Description-fr: Fournit des exemples LabVIEW pour le périphérique personnalisé NI Data Sharing Framework pour NI VeriStand {veristand_version}
 XB-DisplayName-fr: NI Data Sharing Framework - Exemples LabVIEW pour VeriStand {veristand_version}
 Description-ja: NI VeriStand {veristand_version}用 NI データ共有フレームワークカスタムデバイス用のLabVIEWサンプルプログラムを提供します。
+XB-DisplayName-ja: NI Data Sharing Framework LabVIEWサンプルプログラム - VeriStand  {veristand_version}用
 Description-ko: NI VeriStand {veristand_version}을(를) 위한 NI Data Sharing Framework Custom Device의 LabVIEW 예제를 제공합니다.
-XB-DisplayName-ko: NI Data Sharing Framework LabVIEW Examples - VeriStand {veristand_version} 지원XB-DisplayName-ja: NI Data Sharing Framework LabVIEWサンプルプログラム - VeriStand  {veristand_version}用
+XB-DisplayName-ko: NI Data Sharing Framework LabVIEW Examples - VeriStand {veristand_version} 지원.
