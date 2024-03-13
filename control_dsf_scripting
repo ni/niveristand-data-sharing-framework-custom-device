@@ -14,3 +14,13 @@ XB-DisplayVersion: {quarterly_display_version}
 XB-DisplayName: NI Data Sharing Framework LabVIEW Support for VeriStand {veristand_version}
 Depends: ni-labview-{labview_version}{pkg_x86_bitness_suffix} (>= {labview_short_version}.0.0), ni-veristand-{labview_version} (>= {labview_short_version}.0.0), ni-veristand-{veristand_version}-custom-device-labview-support-common (>= 24.0.0)
 Recommends: ni-data-sharing-framework-veristand-{veristand_version}-support (>= {display_version})
+Description-zh-CN:为NI VeriStand {veristand_version}提供 NI Data Sharing Framework Custom Device的LabVIEW支持
+XB-DisplayName-zh-CN: NI Data Sharing Framework LabVIEW Support for VeriStand {veristand_version}
+Description-de: Stellt LabVIEW-Unterstützung für NI Data Sharing Framework Custom Device für NI VeriStand {veristand_version} bereit.
+XB-DisplayName-de: NI Data Sharing Framework - LabVIEW-Support für VeriStand {veristand_version}
+Description-fr: Fournit le support LabVIEW pour le périphérique personnalisé NI Data Sharing Framework pour NI VeriStand {veristand_version}
+XB-DisplayName-fr: NI Data Sharing Framework - Support LabVIEW pour VeriStand {veristand_version}
+Description-ja: NI VeriStand {veristand_version}用 NI データ共有フレームワークカスタムデバイス用のLabVIEWサポートを提供します.
+XB-DisplayName-ja: NI Data Sharing Framework LabVIEWサポート- VeriStand {veristand_version}用
+Description-ko: NI VeriStand {veristand_version}을(를) 위한 NI Data Sharing Framework Custom Device의 LabVIEW 지원을 제공합니다.
+XB-DisplayName-ko: NI Data Sharing Framework LabVIEW 지원 - VeriStand {veristand_version} 지원
