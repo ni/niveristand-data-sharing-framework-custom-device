@@ -23,9 +23,7 @@
 				<Item Name="Default Buffer Converter Name.vi" Type="VI" URL="../Component/Default Buffer Converter/Default Buffer Converter Name.vi"/>
 				<Item Name="Default Buffer Converter Transfer Settings.ctl" Type="VI" URL="../Component/Default Buffer Converter/Default Buffer Converter Transfer Settings.ctl"/>
 			</Item>
-			<Item Name="Add Component Settings.vim" Type="VI" URL="../Component/Add Component Settings.vim">
-				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			</Item>
+			<Item Name="Add Component Settings.vim" Type="VI" URL="../Component/Add Component Settings.vim"/>
 		</Item>
 		<Item Name="Framework" Type="Folder">
 			<Item Name="Add Plugin.vi" Type="VI" URL="../Framework/Add Plugin.vi"/>
