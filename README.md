@@ -17,7 +17,7 @@ LabVIEW 2021
 
 ### Running the custom device
 
-- [VeriStand 2021 or later](https://www.ni.com/en-us/support/downloads/software-products/download.veristand.html)
+- [VeriStand 2023 or later](https://www.ni.com/en-us/support/downloads/software-products/download.veristand.html)
 - [Data Sharing Framework Custom Device Plugins](https://github.com/ni/niveristand-data-sharing-framework-custom-device-plugins/releases)
 
 ### Developing or building from source 
