@@ -11,7 +11,7 @@ The Data Sharing Framework repository provides a plugin-based approach to reflec
 
 ## LabVIEW Source Code Version
 
-LabVIEW 2021
+LabVIEW 2024
 
 ## Dependencies
 
