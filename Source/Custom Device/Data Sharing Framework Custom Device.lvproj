@@ -447,9 +447,9 @@
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
 			</Item>
-			<Item Name="Linux Configuration Debug" Type="Source Distribution">
+			<Item Name="Configuration(Linux) Debug" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{F56C775D-8D3C-4C35-81F3-9A909D7A7DD4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Linux Configuration Debug</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Configuration(Linux) Debug</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Data Sharing Framework</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
@@ -472,9 +472,9 @@
 				<Property Name="Source[1].VI.LLBtopLevel" Type="Bool">true</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
-			<Item Name="Linux Configuration Release" Type="Source Distribution">
+			<Item Name="Configuration(Linux) Release" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{CA1603D7-B370-448B-9E78-FEC764BA8CC5}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Linux Configuration Release</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Configuration(Linux) Release</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Data Sharing Framework</Property>
