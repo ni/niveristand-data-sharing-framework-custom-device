@@ -65,6 +65,8 @@ stages:
       releaseVersion: '26.5.0'
       buildOutputLocation: 'Source\Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
+      repoName: 'niveristand-data-sharing-framework-custom-device'
+      createNetCoreRepo: true
 
       packages:
         - controlFileName: 'control_dsf_cd'
