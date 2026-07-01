@@ -85,3 +85,24 @@ stages:
           payloadMaps:
             - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\Data Sharing Framework'
               payloadLocation: 'Scripting Examples'
+
+  - template: azure-templates/linux-stage.yml@niveristand-custom-device-build-tools
+    parameters:
+      lvVersionsToBuild:
+        - version: '2026'
+          bitness: '64bit'
+
+      buildSteps:
+      - id: 'data-sharing-framework-custom-device-release-build'
+        projectLocation: 'Source/Custom Device/Data Sharing Framework Custom Device.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Configuration(Linux) Release'
+
+
+      releaseVersion: '26.5.0'
+      branch: 'main'
+      debugBuild: 'no'
+      buildOutputLocation: 'Built'
+      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
+      repoName: 'niveristand-data-sharing-framework-custom-device'
