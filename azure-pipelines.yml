@@ -34,66 +34,66 @@ stages:
       - version: '2026'
         bitness: '64bit'
 
-      buildSteps:
-          # Windows build steps should all follow this build step, since it builds an important dependency
-        - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Windows.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'My Computer'
-          buildSpec: 'Data Sharing Framework Core'
+    buildSteps:
+      # Windows build steps should all follow this build step, since it builds an important dependency
+      - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Windows.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Data Sharing Framework Core'
 
-        - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'My Computer'
-          buildSpec: 'Configuration Release'
+      - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Configuration Release'
 
-        - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'My Computer'
-          buildSpec: 'Scripting API'
+      - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Scripting API'
 
-        - projectLocation: 'Source\Scripting Examples\Data Sharing Framework Scripting.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'My Computer'
-          buildSpec: 'Scripting Examples'
+      - projectLocation: 'Source\Scripting Examples\Data Sharing Framework Scripting.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Scripting Examples'
 
-        - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'My Computer'
-          buildSpec: 'Engine Release'
+      - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'My Computer'
+        buildSpec: 'Engine Release'
 
-          # Linux x64 build steps should all follow this build step, since it builds an important dependency
-        - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'Linux RT x64'
-          buildSpec: 'Data Sharing Framework Core'
+      # Linux x64 build steps should all follow this build step, since it builds an important dependency
+      - projectLocation: 'Source\Core\Data Sharing Framework Core Build - Linux RT.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'Linux RT x64'
+        buildSpec: 'Data Sharing Framework Core'
 
-        - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device Linux RT x64.lvproj'
-          buildOperation: 'ExecuteBuildSpec'
-          target: 'Linux RT x64'
-          buildSpec: 'Engine Release'
+      - projectLocation: 'Source\Custom Device\Data Sharing Framework Custom Device Linux RT x64.lvproj'
+        buildOperation: 'ExecuteBuildSpec'
+        target: 'Linux RT x64'
+        buildSpec: 'Engine Release'
 
-      releaseVersion: '26.5.0'
-      buildOutputLocation: 'Source\Built'
-      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
-      repoName: 'niveristand-data-sharing-framework-custom-device'
+    releaseVersion: '26.5.0'
+    buildOutputLocation: 'Source\Built'
+    archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
+    repoName: 'niveristand-data-sharing-framework-custom-device'
 
-      packages:
-        - controlFileName: 'control_dsf_cd'
-          payloadMaps:
-            - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\Data Sharing Framework'
-              payloadLocation: 'Custom Device'
-            - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\Errors\English'
-              payloadLocation: 'Errors'
+    packages:
+      - controlFileName: 'control_dsf_cd'
+        payloadMaps:
+          - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\Data Sharing Framework'
+            payloadLocation: 'Custom Device'
+          - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\Errors\English'
+            payloadLocation: 'Errors'
 
-        - controlFileName: 'control_dsf_scripting'
-          payloadMaps:
-            - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
-              payloadLocation: 'Scripting API'
+      - controlFileName: 'control_dsf_scripting'
+        payloadMaps:
+          - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\Data Sharing Framework'
+            payloadLocation: 'Scripting API'
 
-        - controlFileName: 'control_dsf_examples'
-          payloadMaps:
-            - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\Data Sharing Framework'
-              payloadLocation: 'Scripting Examples'
+      - controlFileName: 'control_dsf_examples'
+        payloadMaps:
+          - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\Data Sharing Framework'
+            payloadLocation: 'Scripting Examples'
 
 # =====================================================================
 # LINUX BUILD
@@ -106,11 +106,11 @@ stages:
     dependsOn: 
       - WindowsBuild
 
-      lvVersionsToBuild:
-        - version: '2026'
-          bitness: '64bit'
+    lvVersionsToBuild:
+      - version: '2026'
+        bitness: '64bit'
 
-      buildSteps:
+    buildSteps:
       - id: 'data-sharing-framework-custom-device-release-build'
         projectLocation: 'Source/Custom Device/Data Sharing Framework Custom Device.lvproj'
         buildOperation: 'ExecuteBuildSpec'
@@ -118,9 +118,9 @@ stages:
         buildSpec: 'Configuration(Linux) Release'
 
 
-      releaseVersion: '26.5.0'
-      branch: 'main'
-      debugBuild: 'no'
-      buildOutputLocation: 'Built'
-      archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
-      repoName: 'niveristand-data-sharing-framework-custom-device'
+    releaseVersion: '26.5.0'
+    branch: 'main'
+    debugBuild: 'no'
+    buildOutputLocation: 'Built'
+    archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
+    repoName: 'niveristand-data-sharing-framework-custom-device'
