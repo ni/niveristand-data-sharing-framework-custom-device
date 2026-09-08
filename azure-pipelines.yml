@@ -31,8 +31,6 @@ stages:
         bitness: '64bit'
       - version: '2025'
         bitness: '64bit'
-      - version: '2026'
-        bitness: '64bit'
 
     buildSteps:
       # Windows build steps should all follow this build step, since it builds an important dependency
@@ -107,7 +105,7 @@ stages:
       - WindowsBuild
 
     lvVersionsToBuild:
-      - version: '2026'
+      - version: '2027'
         bitness: '64bit'
 
     buildSteps:
