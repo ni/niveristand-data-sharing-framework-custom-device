@@ -33,6 +33,8 @@ stages:
         bitness: '64bit'
       - version: '2026'
         bitness: '64bit'
+      - version: '2027'
+        bitness: '64bit'
 
     buildSteps:
       # Windows build steps should all follow this build step, since it builds an important dependency
@@ -72,7 +74,7 @@ stages:
         target: 'Linux RT x64'
         buildSpec: 'Engine Release'
 
-    releaseVersion: '26.5.0'
+    releaseVersion: '26.8.0'
     buildOutputLocation: 'Source\Built'
     archiveLocation: '\\nirvana\Measurements\VeriStandAddons\data_sharing_framework_CD'
     repoName: 'niveristand-data-sharing-framework-custom-device'
@@ -107,7 +109,7 @@ stages:
       - WindowsBuild
 
     lvVersionsToBuild:
-      - version: '2026'
+      - version: '2027'
         bitness: '64bit'
 
     buildSteps:
@@ -118,7 +120,7 @@ stages:
         buildSpec: 'Configuration(Linux) Release'
 
 
-    releaseVersion: '26.5.0'
+    releaseVersion: '26.8.0'
     branch: 'main'
     debugBuild: 'no'
     buildOutputLocation: 'Built'
