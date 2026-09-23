@@ -82,7 +82,7 @@ stages:
     packages:
       - controlFileName: 'control_dsf_cd'
         payloadMaps:
-          - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\Data Sharing Framework'
+          - installLocation: 'programdata\National Instruments\NI VeriStand $(lvVersion)\Plugins\Custom Devices\Data Sharing Framework'
             payloadLocation: 'Custom Device'
           - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\Errors\English'
             payloadLocation: 'Errors'
