@@ -661,20 +661,20 @@
 				<Property Name="Bld_buildSpecName" Type="Str">Configuration(Linux) Release</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/Data Sharing Framework</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/Custom Device</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E0E7D838-4538-4DF2-8A52-DD7EAC0192D8}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/Data Sharing Framework</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Custom Device</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/Data Sharing Framework/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Custom Device/data</Property>
 				<Property Name="Destination[2].destName" Type="Str">DSF Configuration LLB</Property>
-				<Property Name="Destination[2].path" Type="Path">../Built/Data Sharing Framework/DSF Configuration.llb</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Custom Device/DSF Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7E31FAE8-7A37-4159-9DB9-DDC03A1F80C2}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AF1CC7BC-1A92-4B5A-B0B6-957CF27F9D53}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DSF System Explorer.lvlib/Dynamically Called/Actions/ActionVIOnDownload.vi</Property>
