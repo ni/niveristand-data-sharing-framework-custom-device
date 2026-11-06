@@ -26,8 +26,6 @@ stages:
     stageName: WindowsBuild
 
     lvVersionsToBuild:
-      - version: '2024'
-        bitness: '64bit'
       - version: '2025'
         bitness: '64bit'
       - version: '2026'
@@ -79,7 +77,7 @@ stages:
     packages:
       - controlFileName: 'control_dsf_cd'
         payloadMaps:
-          - installLocation: 'programdata\National Instruments\NI VeriStand $(lvVersion)\Addons\Custom Devices\Data Sharing Framework'
+          - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\Data Sharing Framework'
             payloadLocation: 'Custom Device'
           - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\Errors\English'
             payloadLocation: 'Errors'
